@@ -1,1 +1,203 @@
-[]
+[
+    {
+        "id": "e47e114784508322",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "a70b308d97d0a0ed",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "0ba476ce26e5c034",
+        "type": "subflow",
+        "name": "Subflow 1",
+        "info": "",
+        "in": [
+            {
+                "x": 40,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "78a923442171d304"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 920,
+                "y": 120,
+                "wires": [
+                    {
+                        "id": "803a7c5001f0ec05",
+                        "port": 0
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "9039ce5a53d8ac8d",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "servicesoa.mooo.com",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "5",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "803a7c5001f0ec05",
+        "type": "function",
+        "z": "0ba476ce26e5c034",
+        "name": "Calculo altitud ,punto de rocio y fecha",
+        "func": "///////////ALTITUD/////////\nlet presionNivelMar = 101325;\nlet gravedad = 9.8;\nlet presionAire = 1.22\nlet constante = (presionAire*gravedad)/presionNivelMar;\nmsg.payload.altitud = -(Math.log((msg.payload.rawData.presion*100)/presionNivelMar)/constante)\n/////////////////////\n\n////////////////PUNTO DE ROCIO/////////////////\nlet R = (Math.pow((msg.payload.rawData.humedad/ 100), 0.125)) * (112 - (-(0.9 * msg.payload.rawData.temperatura))) - (-(0.1 * msg.payload.rawData.temperatura)) - 112;\nmsg.payload.puntoRocio = (Math.round(R * 100)) / 100\n///////////////////////////////////////////////\nmsg.payload.fechaHoraRecepcion = new Date();\n\nmsg.payload.rawData.temperatura = parseFloat(msg.payload.rawData.temperatura).toFixed(2);\nmsg.payload.rawData.humedad = parseFloat(msg.payload.rawData.humedad).toFixed(2);\nmsg.payload.rawData.presion = parseFloat(msg.payload.rawData.presion).toFixed(2);\nmsg.payload.altitud = parseFloat(msg.payload.altitud).toFixed(2);\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 650,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "97d679fe1aa414ae",
+        "type": "template",
+        "z": "0ba476ce26e5c034",
+        "name": "Armo el JSON",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "{\n\"rawData\":{\n    \"temperatura\":\"{{payload.temperature_C}}\",\n    \"humedad\":\"{{payload.humidity}}\",\n    \"presion\":\"{{payload.pressure_hPa}}\"\n    },\n    \"fechaHoraRecepcion\":\"fecha\",\n    \"categoria\":\"casa\",\n    \"subCategoria\":\"habitacion\",\n    \"identificador\":\"TK01\",\n    \"altitud\":\"altitud\",\n    \"puntoRocio\":\"puntoRocio\"\n}",
+        "output": "json",
+        "x": 380,
+        "y": 120,
+        "wires": [
+            [
+                "803a7c5001f0ec05"
+            ]
+        ]
+    },
+    {
+        "id": "78a923442171d304",
+        "type": "Bme280",
+        "z": "0ba476ce26e5c034",
+        "name": "",
+        "bus": "1",
+        "address": "0x76",
+        "topic": "bme280",
+        "extra": false,
+        "x": 180,
+        "y": 120,
+        "wires": [
+            [
+                "97d679fe1aa414ae"
+            ]
+        ]
+    },
+    {
+        "id": "08c849a2151be731",
+        "type": "subflow:0ba476ce26e5c034",
+        "z": "a70b308d97d0a0ed",
+        "name": "Conexión Sensor de temperatura y humedad",
+        "x": 430,
+        "y": 60,
+        "wires": [
+            [
+                "9aa1d34dd11fd148",
+                "96949194bc3dd5b9"
+            ]
+        ]
+    },
+    {
+        "id": "31635289e8856c33",
+        "type": "inject",
+        "z": "a70b308d97d0a0ed",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 60,
+        "wires": [
+            [
+                "08c849a2151be731"
+            ]
+        ]
+    },
+    {
+        "id": "9aa1d34dd11fd148",
+        "type": "debug",
+        "z": "a70b308d97d0a0ed",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 830,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "96949194bc3dd5b9",
+        "type": "mqtt out",
+        "z": "a70b308d97d0a0ed",
+        "name": "",
+        "topic": "casa/habitacion/tempHum",
+        "qos": "2",
+        "retain": "true",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "9039ce5a53d8ac8d",
+        "x": 830,
+        "y": 160,
+        "wires": []
+    }
+]
