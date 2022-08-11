@@ -222,7 +222,7 @@
         "type": "debug",
         "z": "a70b308d97d0a0ed",
         "name": "debug 2",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -230,8 +230,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 480,
-        "y": 680,
+        "x": 640,
+        "y": 300,
         "wires": []
     },
     {
@@ -397,7 +397,7 @@
         "read": false,
         "bcm": true,
         "x": 330,
-        "y": 700,
+        "y": 300,
         "wires": [
             [
                 "0e4bc38219659e1c"
