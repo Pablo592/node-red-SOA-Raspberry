@@ -24,11 +24,7 @@
             {
                 "x": 40,
                 "y": 80,
-                "wires": [
-                    {
-                        "id": "1b07eea193496d49"
-                    }
-                ]
+                "wires": []
             }
         ],
         "out": [
@@ -335,23 +331,6 @@
         "wires": [
             [
                 "dd17daac6b6ba719"
-            ]
-        ]
-    },
-    {
-        "id": "1b07eea193496d49",
-        "type": "Bme280",
-        "z": "a70b308d97d0a0ed",
-        "name": "",
-        "bus": "1",
-        "address": "0x76",
-        "topic": "bme280",
-        "extra": false,
-        "x": 180,
-        "y": 120,
-        "wires": [
-            [
-                "97d679fe1aa414ae"
             ]
         ]
     }
