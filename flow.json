@@ -201,7 +201,7 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 830,
+        "x": 870,
         "y": 60,
         "wires": []
     },
@@ -239,23 +239,6 @@
         "x": 420,
         "y": 180,
         "wires": []
-    },
-    {
-        "id": "9180e561e1652570",
-        "type": "rc522-extra",
-        "z": "a70b308d97d0a0ed",
-        "name": "",
-        "blockedFor": 5,
-        "CSpin": "24",
-        "dataBlockAddr": 8,
-        "dataBlockLength": 4,
-        "x": 150,
-        "y": 180,
-        "wires": [
-            [
-                "dd17daac6b6ba719"
-            ]
-        ]
     },
     {
         "id": "0e4bc38219659e1c",
@@ -375,6 +358,23 @@
         "wires": [
             [
                 "5533ae5039db6c09"
+            ]
+        ]
+    },
+    {
+        "id": "9180e561e1652570",
+        "type": "rc522-extra",
+        "z": "a70b308d97d0a0ed",
+        "name": "",
+        "blockedFor": 5,
+        "CSpin": "24",
+        "dataBlockAddr": 8,
+        "dataBlockLength": 4,
+        "x": 150,
+        "y": 180,
+        "wires": [
+            [
+                "dd17daac6b6ba719"
             ]
         ]
     }
