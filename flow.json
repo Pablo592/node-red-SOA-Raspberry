@@ -230,8 +230,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 540,
-        "y": 280,
+        "x": 480,
+        "y": 680,
         "wires": []
     },
     {
@@ -383,6 +383,24 @@
                 "5533ae5039db6c09",
                 "d8c19af7c11134bf",
                 "abfba9beeca11254"
+            ]
+        ]
+    },
+    {
+        "id": "fee7ac5ad9a14aa3",
+        "type": "rpi-gpio in",
+        "z": "a70b308d97d0a0ed",
+        "name": "",
+        "pin": "20",
+        "intype": "tri",
+        "debounce": "25",
+        "read": false,
+        "bcm": true,
+        "x": 330,
+        "y": 700,
+        "wires": [
+            [
+                "0e4bc38219659e1c"
             ]
         ]
     }
