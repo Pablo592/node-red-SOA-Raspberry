@@ -26,15 +26,15 @@
                 "y": 80,
                 "wires": [
                     {
-                        "id": "97d679fe1aa414ae"
+                        "id": "e39b5f12c47d7db2"
                     }
                 ]
             }
         ],
         "out": [
             {
-                "x": 760,
-                "y": 80,
+                "x": 1040,
+                "y": 100,
                 "wires": [
                     {
                         "id": "803a7c5001f0ec05",
@@ -81,8 +81,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 470,
-        "y": 80,
+        "x": 750,
+        "y": 100,
         "wires": [
             []
         ]
@@ -98,11 +98,28 @@
         "syntax": "mustache",
         "template": "{\n\"rawData\":{\n    \"temperatura\":\"{{payload.temperature_C}}\",\n    \"humedad\":\"{{payload.humidity}}\",\n    \"presion\":\"{{payload.pressure_hPa}}\"\n    },\n    \"fechaHoraRecepcion\":\"fecha\",\n    \"categoria\":\"casa\",\n    \"subCategoria\":\"habitacion\",\n    \"identificador\":\"TK01\",\n    \"altitud\":\"altitud\",\n    \"puntoRocio\":\"puntoRocio\"\n}",
         "output": "json",
-        "x": 200,
-        "y": 80,
+        "x": 480,
+        "y": 100,
         "wires": [
             [
                 "803a7c5001f0ec05"
+            ]
+        ]
+    },
+    {
+        "id": "e39b5f12c47d7db2",
+        "type": "Bme280",
+        "z": "0ba476ce26e5c034",
+        "name": "",
+        "bus": "1",
+        "address": "0x76",
+        "topic": "bme280",
+        "extra": false,
+        "x": 200,
+        "y": 100,
+        "wires": [
+            [
+                "97d679fe1aa414ae"
             ]
         ]
     },
