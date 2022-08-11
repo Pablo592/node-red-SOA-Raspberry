@@ -73,6 +73,7 @@
     {
         "id": "5517b59173b1cd7d",
         "type": "ioplugin",
+        "d": true,
         "name": "",
         "username": "",
         "password": "",
@@ -126,23 +127,6 @@
         "wires": [
             [
                 "803a7c5001f0ec05"
-            ]
-        ]
-    },
-    {
-        "id": "1b07eea193496d49",
-        "type": "Bme280",
-        "z": "0ba476ce26e5c034",
-        "name": "",
-        "bus": "1",
-        "address": "0x76",
-        "topic": "bme280",
-        "extra": false,
-        "x": 180,
-        "y": 120,
-        "wires": [
-            [
-                "97d679fe1aa414ae"
             ]
         ]
     },
@@ -375,6 +359,23 @@
         "wires": [
             [
                 "dd17daac6b6ba719"
+            ]
+        ]
+    },
+    {
+        "id": "1b07eea193496d49",
+        "type": "Bme280",
+        "z": "a70b308d97d0a0ed",
+        "name": "",
+        "bus": "1",
+        "address": "0x76",
+        "topic": "bme280",
+        "extra": false,
+        "x": 180,
+        "y": 120,
+        "wires": [
+            [
+                "97d679fe1aa414ae"
             ]
         ]
     }
