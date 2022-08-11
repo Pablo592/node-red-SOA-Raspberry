@@ -1,6 +1,6 @@
 [
     {
-        "id": "e47e114784508322",
+        "id": "a70b308d97d0a0ed",
         "type": "tab",
         "label": "Flow 1",
         "disabled": false,
@@ -8,7 +8,7 @@
         "env": []
     },
     {
-        "id": "a70b308d97d0a0ed",
+        "id": "e47e114784508322",
         "type": "tab",
         "label": "Flow 1",
         "disabled": false,
@@ -26,14 +26,14 @@
                 "y": 80,
                 "wires": [
                     {
-                        "id": "78a923442171d304"
+                        "id": "1b07eea193496d49"
                     }
                 ]
             }
         ],
         "out": [
             {
-                "x": 920,
+                "x": 940,
                 "y": 120,
                 "wires": [
                     {
@@ -69,6 +69,29 @@
         "willPayload": "",
         "willMsg": {},
         "sessionExpiry": ""
+    },
+    {
+        "id": "5517b59173b1cd7d",
+        "type": "ioplugin",
+        "name": "",
+        "username": "",
+        "password": "",
+        "boardType": "raspi-io",
+        "serialportName": "",
+        "connectionType": "local",
+        "mqttServer": "",
+        "pubTopic": "",
+        "subTopic": "",
+        "tcpHost": "",
+        "tcpPort": "",
+        "sparkId": "",
+        "sparkToken": "",
+        "beanId": "",
+        "impId": "",
+        "uuid": "",
+        "token": "",
+        "sendUuid": "",
+        "samplingInterval": "500"
     },
     {
         "id": "803a7c5001f0ec05",
@@ -107,7 +130,7 @@
         ]
     },
     {
-        "id": "78a923442171d304",
+        "id": "1b07eea193496d49",
         "type": "Bme280",
         "z": "0ba476ce26e5c034",
         "name": "",
@@ -196,8 +219,163 @@
         "correl": "",
         "expiry": "",
         "broker": "9039ce5a53d8ac8d",
-        "x": 830,
+        "x": 850,
         "y": 160,
         "wires": []
+    },
+    {
+        "id": "dd17daac6b6ba719",
+        "type": "debug",
+        "z": "a70b308d97d0a0ed",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 420,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "9180e561e1652570",
+        "type": "rc522-extra",
+        "z": "a70b308d97d0a0ed",
+        "name": "",
+        "blockedFor": 5,
+        "CSpin": "24",
+        "dataBlockAddr": 8,
+        "dataBlockLength": 4,
+        "x": 150,
+        "y": 180,
+        "wires": [
+            [
+                "dd17daac6b6ba719"
+            ]
+        ]
+    },
+    {
+        "id": "0e4bc38219659e1c",
+        "type": "debug",
+        "z": "a70b308d97d0a0ed",
+        "name": "debug 2",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 540,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "abfba9beeca11254",
+        "type": "rpi-gpio out",
+        "z": "a70b308d97d0a0ed",
+        "name": "",
+        "pin": "26",
+        "set": false,
+        "level": "1",
+        "freq": "",
+        "out": "out",
+        "bcm": true,
+        "x": 940,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "d8c19af7c11134bf",
+        "type": "rpi-gpio out",
+        "z": "a70b308d97d0a0ed",
+        "name": "",
+        "pin": "19",
+        "set": "",
+        "level": "0",
+        "freq": "",
+        "out": "out",
+        "bcm": true,
+        "x": 940,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "5533ae5039db6c09",
+        "type": "rpi-gpio out",
+        "z": "a70b308d97d0a0ed",
+        "name": "",
+        "pin": "13",
+        "set": "",
+        "level": "0",
+        "freq": "",
+        "out": "out",
+        "bcm": true,
+        "x": 940,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "96778263d1e75271",
+        "type": "inject",
+        "z": "a70b308d97d0a0ed",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "1",
+        "payloadType": "num",
+        "x": 370,
+        "y": 420,
+        "wires": [
+            [
+                "abfba9beeca11254",
+                "d8c19af7c11134bf"
+            ]
+        ]
+    },
+    {
+        "id": "c02734ada4743dd9",
+        "type": "inject",
+        "z": "a70b308d97d0a0ed",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "0",
+        "payloadType": "num",
+        "x": 370,
+        "y": 480,
+        "wires": [
+            [
+                "5533ae5039db6c09"
+            ]
+        ]
     }
 ]
