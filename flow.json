@@ -655,7 +655,8 @@
         "y": 560,
         "wires": [
             [
-                "c2a8a6735f07ef03"
+                "c2a8a6735f07ef03",
+                "93573ada857dfa02"
             ],
             [],
             []
@@ -685,8 +686,8 @@
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 890,
-        "y": 560,
+        "x": 950,
+        "y": 640,
         "wires": [
             [
                 "93573ada857dfa02"
