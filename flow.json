@@ -247,10 +247,7 @@
         "bcm": true,
         "x": 900,
         "y": 380,
-        "wires": [],
-        "inputLabels": [
-            "msg.payload.uno"
-        ]
+        "wires": []
     },
     {
         "id": "d8c19af7c11134bf",
@@ -265,10 +262,7 @@
         "bcm": true,
         "x": 900,
         "y": 520,
-        "wires": [],
-        "inputLabels": [
-            "msg.payload.dos"
-        ]
+        "wires": []
     },
     {
         "id": "5533ae5039db6c09",
@@ -283,10 +277,7 @@
         "bcm": true,
         "x": 900,
         "y": 660,
-        "wires": [],
-        "inputLabels": [
-            "msg.payload.tres"
-        ]
+        "wires": []
     },
     {
         "id": "9180e561e1652570",
