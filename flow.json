@@ -249,7 +249,7 @@
         "y": 380,
         "wires": [],
         "inputLabels": [
-            "payload.uno"
+            "msg.payload.uno"
         ]
     },
     {
