@@ -215,11 +215,16 @@
                 "t": "eq",
                 "v": "Azul",
                 "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Apagar",
+                "vt": "str"
             }
         ],
         "checkall": "true",
         "repair": false,
-        "outputs": 3,
+        "outputs": 4,
         "x": 190,
         "y": 240,
         "wires": [
@@ -234,6 +239,9 @@
             [
                 "c5da78eae25cb2bf",
                 "2105d484190119db"
+            ],
+            [
+                "0e477aa35d9c15ed"
             ]
         ]
     },
@@ -350,6 +358,27 @@
         "y": 420,
         "wires": [
             [
+                "5533ae5039db6c09"
+            ]
+        ]
+    },
+    {
+        "id": "0e477aa35d9c15ed",
+        "type": "template",
+        "z": "e92dc53c81852ec7",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "0",
+        "output": "str",
+        "x": 460,
+        "y": 580,
+        "wires": [
+            [
+                "abfba9beeca11254",
+                "d8c19af7c11134bf",
                 "5533ae5039db6c09"
             ]
         ]
@@ -504,7 +533,7 @@
         "id": "8790e51979b82db4",
         "type": "inject",
         "z": "a70b308d97d0a0ed",
-        "name": "",
+        "name": "Establecer color",
         "props": [
             {
                 "p": "payload.color",
@@ -517,7 +546,7 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 150,
+        "x": 180,
         "y": 340,
         "wires": [
             [
@@ -535,16 +564,14 @@
         "wires": []
     },
     {
-        "id": "1c5ff423cdc5d04c",
+        "id": "fa49e24c65a21e5d",
         "type": "inject",
         "z": "a70b308d97d0a0ed",
-        "name": "",
+        "name": "Apagar Led",
         "props": [
             {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
+                "p": "payload.color",
+                "v": "Apagar",
                 "vt": "str"
             }
         ],
@@ -553,12 +580,12 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 120,
-        "y": 520,
+        "x": 170,
+        "y": 420,
         "wires": [
-            []
+            [
+                "5f844d3ebda3036b"
+            ]
         ]
     }
 ]
