@@ -336,7 +336,7 @@
         "wires": [
             [
                 "3ebdc60c316b49df",
-                "fbfcf0ac9fecb882"
+                "d27f6f5d4cc32eee"
             ]
         ]
     },
@@ -375,25 +375,75 @@
         "wires": []
     },
     {
-        "id": "fbfcf0ac9fecb882",
-        "type": "function",
+        "id": "d27f6f5d4cc32eee",
+        "type": "switch",
         "z": "a70b308d97d0a0ed",
-        "name": "function 1",
-        "func": "msg.payload = { \"uno\": \"\" }, { \"dos\": \"\" }, { \"tres\": \"\" };\n\n\nmsg.payload.uno = parseInt('1');\nmsg.payload.dos = parseInt('0');\nmsg.payload.tres = parseInt('0');\nmsg.payload = 1\nreturn msg;\n/*\n\nswitch (msg.payload.color) {\n    case \"Rojo\": {\n        return [numero(1), numero(0), numero(0)];\n    }\n    case \"Verde\": {\n        return [numero(0), numero(1), numero(0)];\n    }\n    case \"Azul\": {\n        return [numero(0), numero(0), numero(1)];\n    }\n    default: {\n        return [numero(0), numero(0), numero(0)];\n    }\n}\n\nfunction numero(num) {\n    msg.payload = num;\n    return msg;\n}*/",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 480,
-        "y": 480,
+        "name": "",
+        "property": "payload.color",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "Rojo",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Verde",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Azul",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 390,
+        "y": 520,
         "wires": [
             [
-                "abfba9beeca11254",
-                "d8c19af7c11134bf",
-                "5533ae5039db6c09",
-                "04c1f13fddec4dc2"
-            ]
+                "0e287230a3049135",
+                "11b4e817401957e4"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "11b4e817401957e4",
+        "type": "template",
+        "z": "a70b308d97d0a0ed",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "This is the payload: {{payload}} !",
+        "output": "str",
+        "x": 660,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0e287230a3049135",
+        "type": "template",
+        "z": "a70b308d97d0a0ed",
+        "name": "",
+        "field": "payload.payload",
+        "fieldType": "msg",
+        "format": "html",
+        "syntax": "mustache",
+        "template": "msg.payload = 1;\nreturn msg;",
+        "output": "str",
+        "x": 660,
+        "y": 440,
+        "wires": [
+            []
         ]
     }
 ]
