@@ -87,11 +87,11 @@
         ],
         "out": [
             {
-                "x": 1160,
+                "x": 1240,
                 "y": 80,
                 "wires": [
                     {
-                        "id": "4808205d1f385054",
+                        "id": "903d869093307c51",
                         "port": 0
                     }
                 ]
@@ -500,9 +500,25 @@
         "fieldType": "msg",
         "format": "handlebars",
         "syntax": "mustache",
-        "template": "{\n    {{msg.payload.hostname}},\n    {{msg.payload.city}},\n    {{msg.payload.region}},\n    {{msg.payload.country}},\n    {{msg.payload.loc}},\n    {{msg.payload.org}},\n    {{msg.payload.postal}},\n    {{msg.payload.timezone}}\n}",
+        "template": "{\n \"hostname\":\"{{msg.payload.hostname}}\",\n \"city\":\"{{msg.payload.city}}\",\n \"region\":\"{{msg.payload.region}}\",\n \"country\":\"{{msg.payload.country}}\",\n \"loc\":\"{{msg.payload.loc}}\",\n \"org\":\"{{msg.payload.org}}\",\n \"postal\":\"{{msg.payload.postal}}\",\n \"timezone\":\"{{msg.payload.timezone}}\"\n}",
         "output": "str",
         "x": 960,
+        "y": 80,
+        "wires": [
+            [
+                "903d869093307c51"
+            ]
+        ]
+    },
+    {
+        "id": "903d869093307c51",
+        "type": "json",
+        "z": "f1eb68bd8dddaee2",
+        "name": "",
+        "property": "ubicacion",
+        "action": "",
+        "pretty": false,
+        "x": 1110,
         "y": 80,
         "wires": [
             []
