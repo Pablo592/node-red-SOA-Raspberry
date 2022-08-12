@@ -300,13 +300,13 @@
         "id": "fee7ac5ad9a14aa3",
         "type": "rpi-gpio in",
         "z": "a70b308d97d0a0ed",
-        "name": "",
+        "name": "Sensor PIR",
         "pin": "20",
         "intype": "tri",
         "debounce": "25",
         "read": false,
         "bcm": true,
-        "x": 330,
+        "x": 350,
         "y": 300,
         "wires": [
             [
@@ -329,13 +329,16 @@
         "y": 520,
         "wires": [
             [
-                "abfba9beeca11254"
+                "abfba9beeca11254",
+                "04c1f13fddec4dc2"
             ],
             [
-                "d8c19af7c11134bf"
+                "d8c19af7c11134bf",
+                "04c1f13fddec4dc2"
             ],
             [
-                "5533ae5039db6c09"
+                "5533ae5039db6c09",
+                "04c1f13fddec4dc2"
             ]
         ]
     },
@@ -378,8 +381,25 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 420,
-        "y": 640,
+        "x": 440,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "04c1f13fddec4dc2",
+        "type": "debug",
+        "z": "a70b308d97d0a0ed",
+        "name": "debug 4",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 920,
+        "y": 920,
         "wires": []
     }
 ]
