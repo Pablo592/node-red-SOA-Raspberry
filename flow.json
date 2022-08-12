@@ -560,42 +560,5 @@
         "wires": [
             []
         ]
-    },
-    {
-        "id": "52d858d23f0f5d91",
-        "type": "gpsd",
-        "z": "a70b308d97d0a0ed",
-        "name": "",
-        "hostname": "-n 127.0.0.1",
-        "port": "2947",
-        "tpv": true,
-        "sky": false,
-        "info": false,
-        "device": false,
-        "gst": false,
-        "att": false,
-        "x": 130,
-        "y": 440,
-        "wires": [
-            [
-                "7dfbfae08f43996d"
-            ]
-        ]
-    },
-    {
-        "id": "7dfbfae08f43996d",
-        "type": "debug",
-        "z": "a70b308d97d0a0ed",
-        "name": "debug 3",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 440,
-        "y": 440,
-        "wires": []
     }
 ]
