@@ -230,7 +230,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 640,
+        "x": 540,
         "y": 300,
         "wires": []
     },
@@ -306,7 +306,7 @@
         "debounce": "25",
         "read": false,
         "bcm": true,
-        "x": 350,
+        "x": 250,
         "y": 300,
         "wires": [
             [
@@ -394,8 +394,8 @@
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
+        "complete": "payload",
+        "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
         "x": 920,
