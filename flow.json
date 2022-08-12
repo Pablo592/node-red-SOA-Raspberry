@@ -566,7 +566,7 @@
         "type": "gpsd",
         "z": "a70b308d97d0a0ed",
         "name": "",
-        "hostname": "localhost",
+        "hostname": "127.0.0.1",
         "port": "2947",
         "tpv": true,
         "sky": false,
@@ -594,8 +594,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 500,
-        "y": 460,
+        "x": 440,
+        "y": 440,
         "wires": []
     }
 ]
