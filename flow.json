@@ -566,7 +566,7 @@
         "type": "gpsd",
         "z": "a70b308d97d0a0ed",
         "name": "",
-        "hostname": "127.0.0.1",
+        "hostname": "-n 127.0.0.1",
         "port": "2947",
         "tpv": true,
         "sky": false,
