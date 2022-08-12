@@ -686,7 +686,7 @@
         "type": "template",
         "z": "a70b308d97d0a0ed",
         "name": "",
-        "field": "req.query",
+        "field": "req.url",
         "fieldType": "msg",
         "format": "handlebars",
         "syntax": "mustache",
