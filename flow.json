@@ -408,8 +408,14 @@
                 "0e287230a3049135",
                 "11b4e817401957e4"
             ],
-            [],
-            []
+            [
+                "acc68537f9218d62",
+                "6596b0203614fb63"
+            ],
+            [
+                "c5da78eae25cb2bf",
+                "2105d484190119db"
+            ]
         ]
     },
     {
@@ -476,6 +482,84 @@
         "y": 800,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "acc68537f9218d62",
+        "type": "template",
+        "z": "a70b308d97d0a0ed",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "1",
+        "output": "str",
+        "x": 660,
+        "y": 500,
+        "wires": [
+            [
+                "d8c19af7c11134bf"
+            ]
+        ]
+    },
+    {
+        "id": "6596b0203614fb63",
+        "type": "template",
+        "z": "a70b308d97d0a0ed",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "0",
+        "output": "str",
+        "x": 680,
+        "y": 660,
+        "wires": [
+            [
+                "abfba9beeca11254",
+                "5533ae5039db6c09"
+            ]
+        ]
+    },
+    {
+        "id": "c5da78eae25cb2bf",
+        "type": "template",
+        "z": "a70b308d97d0a0ed",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "0",
+        "output": "str",
+        "x": 680,
+        "y": 720,
+        "wires": [
+            [
+                "abfba9beeca11254",
+                "d8c19af7c11134bf"
+            ]
+        ]
+    },
+    {
+        "id": "2105d484190119db",
+        "type": "template",
+        "z": "a70b308d97d0a0ed",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "1",
+        "output": "str",
+        "x": 800,
+        "y": 760,
+        "wires": [
+            [
+                "5533ae5039db6c09"
+            ]
         ]
     }
 ]
