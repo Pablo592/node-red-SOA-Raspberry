@@ -686,7 +686,7 @@
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 1010,
+        "x": 1030,
         "y": 660,
         "wires": [
             [
@@ -705,11 +705,12 @@
         "arraySpltType": "len",
         "stream": false,
         "addname": "",
-        "x": 870,
+        "x": 890,
         "y": 600,
         "wires": [
             [
-                "c2a8a6735f07ef03"
+                "c2a8a6735f07ef03",
+                "93573ada857dfa02"
             ]
         ]
     }
