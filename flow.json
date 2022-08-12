@@ -96,24 +96,6 @@
         "sessionExpiry": ""
     },
     {
-        "id": "88f77589.0122d8",
-        "type": "ui_group",
-        "name": "",
-        "tab": "c4c17961.4519f8",
-        "order": 1,
-        "disp": true,
-        "width": 15,
-        "collapse": false
-    },
-    {
-        "id": "c4c17961.4519f8",
-        "type": "ui_tab",
-        "name": "Location",
-        "icon": "dashboard",
-        "disabled": false,
-        "hidden": false
-    },
-    {
         "id": "803a7c5001f0ec05",
         "type": "function",
         "z": "0ba476ce26e5c034",
@@ -623,8 +605,8 @@
         "showgrid": "false",
         "allowFileDrop": "false",
         "path": "/mapui",
-        "x": 780,
-        "y": 120,
+        "x": 920,
+        "y": 160,
         "wires": []
     },
     {
@@ -662,7 +644,7 @@
         "lat": "",
         "lon": "",
         "zoom": "",
-        "layer": "Esri Satellite",
+        "layer": "OSMG",
         "cluster": "",
         "maxage": "",
         "usermenu": "show",
@@ -675,6 +657,12 @@
         "showgrid": "false",
         "allowFileDrop": "false",
         "path": "/mapui",
+        "overlist": "DR,CO,RA,DN,HM",
+        "maplist": "OSMG,OSMC,EsriC,EsriS,EsriT,EsriO,EsriDG,NatGeo,UKOS,OpTop",
+        "mapname": "",
+        "mapurl": "",
+        "mapopt": "",
+        "mapwms": false,
         "x": 730,
         "y": 200,
         "wires": []
