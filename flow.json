@@ -501,7 +501,7 @@
         "props": [
             {
                 "p": "payload.color",
-                "v": "Rojo",
+                "v": "Verde",
                 "vt": "str"
             }
         ],
@@ -514,27 +514,9 @@
         "y": 420,
         "wires": [
             [
-                "3ebdc60c316b49df",
                 "5f844d3ebda3036b"
             ]
         ]
-    },
-    {
-        "id": "3ebdc60c316b49df",
-        "type": "debug",
-        "z": "a70b308d97d0a0ed",
-        "name": "debug 3",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 400,
-        "y": 680,
-        "wires": []
     },
     {
         "id": "ad505f3bfdb3db94",
@@ -566,8 +548,8 @@
         "type": "subflow:e92dc53c81852ec7",
         "z": "a70b308d97d0a0ed",
         "name": "Setear color en led",
-        "x": 510,
-        "y": 500,
+        "x": 470,
+        "y": 420,
         "wires": []
     }
 ]
