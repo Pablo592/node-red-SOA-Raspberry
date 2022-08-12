@@ -501,7 +501,7 @@
         "props": [
             {
                 "p": "payload.color",
-                "v": "Azul",
+                "v": "Rojo",
                 "vt": "str"
             }
         ],
@@ -510,8 +510,8 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 130,
-        "y": 520,
+        "x": 210,
+        "y": 420,
         "wires": [
             [
                 "3ebdc60c316b49df",
@@ -532,8 +532,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 220,
-        "y": 740,
+        "x": 400,
+        "y": 680,
         "wires": []
     },
     {
