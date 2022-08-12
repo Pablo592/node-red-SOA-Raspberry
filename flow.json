@@ -515,7 +515,7 @@
         "type": "function",
         "z": "f1eb68bd8dddaee2",
         "name": "function 1",
-        "func": "return msg.ubicacion.replace('&#x2F;', '/');",
+        "func": "msg.ubicacion.replace('&#x2F;', '/');\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
