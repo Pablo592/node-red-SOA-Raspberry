@@ -245,8 +245,8 @@
         "freq": "",
         "out": "out",
         "bcm": true,
-        "x": 860,
-        "y": 440,
+        "x": 900,
+        "y": 380,
         "wires": []
     },
     {
@@ -260,8 +260,8 @@
         "freq": "",
         "out": "out",
         "bcm": true,
-        "x": 860,
-        "y": 580,
+        "x": 900,
+        "y": 520,
         "wires": []
     },
     {
@@ -275,8 +275,8 @@
         "freq": "",
         "out": "out",
         "bcm": true,
-        "x": 860,
-        "y": 720,
+        "x": 900,
+        "y": 660,
         "wires": []
     },
     {
@@ -319,7 +319,7 @@
         "type": "function",
         "z": "a70b308d97d0a0ed",
         "name": "function 1",
-        "func": "switch (msg.payload.color) {\n    case 'Rojo': {\n        return [numero(1), numero(0), numero(0)];\n    }\n    case 'Verde': {\n        return [numero(0), numero(1), numero(0)];\n    }\n    case 'Azul': {\n        return [numero(0), numero(0), numero(1)];\n    }\n    default: {\n        return [numero(0), numero(0), numero(0)];\n    }\n}\n\nfunction numero(num) {\n    msg.payload = num\n    return msg;\n}",
+        "func": "switch (msg.payload.color) {\n    case 'Rojo': {\n        return [numero(1), numero(0), numero(0)];\n    }\n    case 'Verde': {\n        return [numero(0), numero(1), numero(0)];\n    }\n    case 'Azul': {\n        return [numero(0), numero(0), numero(1)];\n    }\n    default: {\n        return [numero(0), numero(0), numero(0)];\n    }\n}\n\nfunction numero(num) {\n    msg.payload = num;\n    return msg;\n}",
         "outputs": 3,
         "noerr": 0,
         "initialize": "",
