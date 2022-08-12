@@ -629,7 +629,7 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 740,
+        "x": 1160,
         "y": 420,
         "wires": []
     },
@@ -708,8 +708,7 @@
         "y": 560,
         "wires": [
             [
-                "6f2e636c2084d967",
-                "93573ada857dfa02"
+                "6f2e636c2084d967"
             ]
         ]
     }
