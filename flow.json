@@ -319,7 +319,7 @@
         "type": "function",
         "z": "a70b308d97d0a0ed",
         "name": "function 1",
-        "func": "switch(msg.payload.color){\n    case 'Rojo':{\n        return [1,0,0];\n    }\n    case 'Verde': {\n        return [0,1, 0];\n    }\n    case 'Azul': {\n        return [0, 0, 1];\n    }}\n",
+        "func": "switch(msg.payload.color){\n    case 'Rojo':{\n        return [1,0,0];\n    }\n    case 'Verde': {\n        return [0,1, 0];\n    }\n    case 'Azul': {\n        return [0, 0, 1];\n    }}\nreturn [0, 0, 0];",
         "outputs": 3,
         "noerr": 0,
         "initialize": "",
