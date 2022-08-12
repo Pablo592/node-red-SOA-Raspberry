@@ -655,7 +655,7 @@
         "y": 560,
         "wires": [
             [
-                "93573ada857dfa02"
+                "c2a8a6735f07ef03"
             ],
             [],
             []
@@ -673,8 +673,24 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 940,
+        "x": 1100,
         "y": 560,
         "wires": []
+    },
+    {
+        "id": "c2a8a6735f07ef03",
+        "type": "json",
+        "z": "a70b308d97d0a0ed",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 890,
+        "y": 560,
+        "wires": [
+            [
+                "93573ada857dfa02"
+            ]
+        ]
     }
 ]
