@@ -477,7 +477,7 @@
         "name": "",
         "splt": "<H",
         "spltType": "str",
-        "arraySplt": 1,
+        "arraySplt": "0",
         "arraySpltType": "len",
         "stream": false,
         "addname": "",
