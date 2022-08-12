@@ -598,8 +598,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 440,
-        "y": 180,
+        "x": 420,
+        "y": 120,
         "wires": []
     },
     {
@@ -615,8 +615,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 440,
-        "y": 240,
+        "x": 420,
+        "y": 180,
         "wires": []
     },
     {
@@ -628,8 +628,8 @@
         "CSpin": "24",
         "dataBlockAddr": 8,
         "dataBlockLength": 4,
-        "x": 200,
-        "y": 180,
+        "x": 180,
+        "y": 120,
         "wires": [
             [
                 "dd17daac6b6ba719"
@@ -646,8 +646,8 @@
         "debounce": "25",
         "read": false,
         "bcm": true,
-        "x": 150,
-        "y": 240,
+        "x": 130,
+        "y": 180,
         "wires": [
             [
                 "0e4bc38219659e1c"
@@ -671,8 +671,8 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 180,
-        "y": 340,
+        "x": 160,
+        "y": 260,
         "wires": [
             [
                 "5f844d3ebda3036b"
@@ -684,8 +684,8 @@
         "type": "subflow:e92dc53c81852ec7",
         "z": "a70b308d97d0a0ed",
         "name": "Setear color en led",
-        "x": 410,
-        "y": 340,
+        "x": 390,
+        "y": 260,
         "wires": []
     },
     {
@@ -705,8 +705,8 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 170,
-        "y": 420,
+        "x": 150,
+        "y": 340,
         "wires": [
             [
                 "5f844d3ebda3036b"
@@ -735,7 +735,7 @@
         "payload": "",
         "payloadType": "date",
         "x": 140,
-        "y": 560,
+        "y": 400,
         "wires": [
             [
                 "3b337c9016b3dae3"
@@ -756,7 +756,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 560,
-        "y": 560,
+        "y": 400,
         "wires": []
     },
     {
@@ -765,7 +765,7 @@
         "z": "a70b308d97d0a0ed",
         "name": "Obtener mi ubicacion",
         "x": 340,
-        "y": 560,
+        "y": 400,
         "wires": [
             [
                 "93573ada857dfa02"
