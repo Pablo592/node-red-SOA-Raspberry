@@ -320,7 +320,7 @@
         "z": "a70b308d97d0a0ed",
         "d": true,
         "name": "function 1",
-        "func": "\n\nswitch(msg.payload.color){\n    case 'Rojo':{\n        return [msg.payload = '1', msg.payload = '0', msg.payload ='0'];\n    }\n    case 'Verde': {\n        return [msg.payload ='0', msg.payload ='1', msg.payload ='0'];\n    }\n    case 'Azul': {\n        return [msg.payload ='0', msg.payload ='0', msg.payload ='1'];\n    }}\nreturn [msg.payload = '0', msg.payload = '0', msg.payload ='0'];",
+        "func": "\n\nswitch(msg.payload.color){\n    case 'Rojo':{\n        return [1,0,0];\n    }\n    case 'Verde': {\n        return [0,1,0];\n    }\n    case 'Azul': {\n        return [0,0,1];\n    }}\nreturn [0,0,0];",
         "outputs": 3,
         "noerr": 0,
         "initialize": "",
