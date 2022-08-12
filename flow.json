@@ -87,11 +87,11 @@
         ],
         "out": [
             {
-                "x": 1140,
-                "y": 80,
+                "x": 640,
+                "y": 160,
                 "wires": [
                     {
-                        "id": "4808205d1f385054",
+                        "id": "8c276f9512f84d09",
                         "port": 0
                     }
                 ]
@@ -501,9 +501,44 @@
         "format": "handlebars",
         "syntax": "mustache",
         "template": "\n{\n \"city\":\"{{payload.city}}\",\n \"region\":\"{{payload.region}}\",\n \"country\":\"{{payload.country}}\",\n \"loc\":\"{{payload.loc}}\",\n \"postal\":\"{{payload.postal}}\",\n \"timezone\":\"{{payload.timezone}}\"\n}",
-        "output": "json",
-        "x": 960,
-        "y": 80,
+        "output": "str",
+        "x": 160,
+        "y": 160,
+        "wires": [
+            [
+                "35bb8abd3e920e86"
+            ]
+        ]
+    },
+    {
+        "id": "35bb8abd3e920e86",
+        "type": "function",
+        "z": "f1eb68bd8dddaee2",
+        "name": "function 1",
+        "func": "return msg.ubicacion.replace('&#x2F;', '/');",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 160,
+        "wires": [
+            [
+                "8c276f9512f84d09"
+            ]
+        ]
+    },
+    {
+        "id": "8c276f9512f84d09",
+        "type": "json",
+        "z": "f1eb68bd8dddaee2",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 470,
+        "y": 160,
         "wires": [
             []
         ]
