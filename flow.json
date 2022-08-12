@@ -473,7 +473,7 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 420,
+        "x": 440,
         "y": 180,
         "wires": []
     },
@@ -498,12 +498,12 @@
         "id": "9180e561e1652570",
         "type": "rc522-extra",
         "z": "a70b308d97d0a0ed",
-        "name": "",
+        "name": "Lector de tarjetas electronicas",
         "blockedFor": 5,
         "CSpin": "24",
         "dataBlockAddr": 8,
         "dataBlockLength": 4,
-        "x": 150,
+        "x": 200,
         "y": 180,
         "wires": [
             [
