@@ -454,8 +454,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 540,
-        "y": 300,
+        "x": 440,
+        "y": 240,
         "wires": []
     },
     {
@@ -485,8 +485,8 @@
         "debounce": "25",
         "read": false,
         "bcm": true,
-        "x": 250,
-        "y": 300,
+        "x": 150,
+        "y": 240,
         "wires": [
             [
                 "0e4bc38219659e1c"
@@ -510,8 +510,8 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 210,
-        "y": 420,
+        "x": 150,
+        "y": 340,
         "wires": [
             [
                 "5f844d3ebda3036b"
@@ -523,8 +523,40 @@
         "type": "subflow:e92dc53c81852ec7",
         "z": "a70b308d97d0a0ed",
         "name": "Setear color en led",
-        "x": 470,
-        "y": 420,
+        "x": 410,
+        "y": 340,
         "wires": []
+    },
+    {
+        "id": "298e8d2279ac6dcd",
+        "type": "maps",
+        "z": "a70b308d97d0a0ed",
+        "name": "",
+        "path": "maps",
+        "maptitle": "Map title",
+        "x": 690,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "56be893ea3dc7f0b",
+        "type": "template",
+        "z": "a70b308d97d0a0ed",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "{\"lon\":\"0\",\"lat\":\"0\"}",
+        "output": "str",
+        "x": 380,
+        "y": 460,
+        "wires": [
+            [
+                "298e8d2279ac6dcd"
+            ]
+        ]
     }
 ]
