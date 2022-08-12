@@ -322,7 +322,7 @@
         "props": [
             {
                 "p": "payload.color",
-                "v": "Rojo",
+                "v": "Verde",
                 "vt": "str"
             }
         ],
