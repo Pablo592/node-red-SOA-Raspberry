@@ -16,6 +16,13 @@
         "env": []
     },
     {
+        "id": "6e545ede.d4925",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": ""
+    },
+    {
         "id": "0ba476ce26e5c034",
         "type": "subflow",
         "name": "Subflow 1",
@@ -87,6 +94,24 @@
         "willPayload": "",
         "willMsg": {},
         "sessionExpiry": ""
+    },
+    {
+        "id": "88f77589.0122d8",
+        "type": "ui_group",
+        "name": "",
+        "tab": "c4c17961.4519f8",
+        "order": 1,
+        "disp": true,
+        "width": 15,
+        "collapse": false
+    },
+    {
+        "id": "c4c17961.4519f8",
+        "type": "ui_tab",
+        "name": "Location",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
     },
     {
         "id": "803a7c5001f0ec05",
@@ -525,6 +550,133 @@
         "name": "Setear color en led",
         "x": 410,
         "y": 340,
+        "wires": []
+    },
+    {
+        "id": "7a97b4c5.876cfc",
+        "type": "gpsd",
+        "z": "6e545ede.d4925",
+        "name": "Adafruit Ultimate GPS",
+        "hostname": "0.0.0.0",
+        "port": "2947",
+        "tpv": true,
+        "sky": true,
+        "info": false,
+        "device": true,
+        "gst": false,
+        "att": false,
+        "x": 140,
+        "y": 200,
+        "wires": [
+            [
+                "6560f5f6.c0ed8c"
+            ]
+        ]
+    },
+    {
+        "id": "6560f5f6.c0ed8c",
+        "type": "switch",
+        "z": "6e545ede.d4925",
+        "name": "",
+        "property": "payload.class",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "TPV",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 350,
+        "y": 200,
+        "wires": [
+            [
+                "4d22a0bd.63dda"
+            ]
+        ]
+    },
+    {
+        "id": "2cf3ed7c.bd6ad2",
+        "type": "ui_worldmap",
+        "z": "6e545ede.d4925",
+        "group": "88f77589.0122d8",
+        "order": 2,
+        "width": "14",
+        "height": "14",
+        "name": "Worldmap ",
+        "lat": "",
+        "lon": "",
+        "zoom": "",
+        "layer": "OSM grey",
+        "cluster": "",
+        "maxage": "",
+        "usermenu": "show",
+        "layers": "show",
+        "panit": "true",
+        "panlock": "false",
+        "zoomlock": "true",
+        "hiderightclick": "false",
+        "coords": "deg",
+        "showgrid": "false",
+        "allowFileDrop": "false",
+        "path": "/mapui",
+        "x": 780,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "4d22a0bd.63dda",
+        "type": "change",
+        "z": "6e545ede.d4925",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload.name",
+                "pt": "msg",
+                "to": "Worldmap",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 540,
+        "y": 200,
+        "wires": [
+            [
+                "23b5e03.345882"
+            ]
+        ]
+    },
+    {
+        "id": "23b5e03.345882",
+        "type": "worldmap",
+        "z": "6e545ede.d4925",
+        "name": "",
+        "lat": "",
+        "lon": "",
+        "zoom": "",
+        "layer": "Esri Satellite",
+        "cluster": "",
+        "maxage": "",
+        "usermenu": "show",
+        "layers": "show",
+        "panit": "false",
+        "panlock": "false",
+        "zoomlock": "false",
+        "hiderightclick": "false",
+        "coords": "none",
+        "showgrid": "false",
+        "allowFileDrop": "false",
+        "path": "/mapui",
+        "x": 730,
+        "y": 200,
         "wires": []
     }
 ]
