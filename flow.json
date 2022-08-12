@@ -519,31 +519,6 @@
         ]
     },
     {
-        "id": "ad505f3bfdb3db94",
-        "type": "change",
-        "z": "a70b308d97d0a0ed",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 380,
-        "y": 960,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "5f844d3ebda3036b",
         "type": "subflow:e92dc53c81852ec7",
         "z": "a70b308d97d0a0ed",
