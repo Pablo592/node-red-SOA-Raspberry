@@ -245,8 +245,8 @@
         "freq": "",
         "out": "out",
         "bcm": true,
-        "x": 940,
-        "y": 400,
+        "x": 860,
+        "y": 440,
         "wires": []
     },
     {
@@ -260,8 +260,8 @@
         "freq": "",
         "out": "out",
         "bcm": true,
-        "x": 940,
-        "y": 460,
+        "x": 860,
+        "y": 580,
         "wires": []
     },
     {
@@ -275,8 +275,8 @@
         "freq": "",
         "out": "out",
         "bcm": true,
-        "x": 940,
-        "y": 520,
+        "x": 860,
+        "y": 720,
         "wires": []
     },
     {
@@ -304,8 +304,7 @@
         "y": 420,
         "wires": [
             [
-                "abfba9beeca11254",
-                "d8c19af7c11134bf"
+                "abfba9beeca11254"
             ]
         ]
     },
@@ -334,7 +333,7 @@
         "y": 480,
         "wires": [
             [
-                "5533ae5039db6c09"
+                "abfba9beeca11254"
             ]
         ]
     },
@@ -356,7 +355,54 @@
         ]
     },
     {
-        "id": "c2bfaf3fb63e38e2",
+        "id": "fee7ac5ad9a14aa3",
+        "type": "rpi-gpio in",
+        "z": "a70b308d97d0a0ed",
+        "name": "",
+        "pin": "20",
+        "intype": "tri",
+        "debounce": "25",
+        "read": false,
+        "bcm": true,
+        "x": 330,
+        "y": 300,
+        "wires": [
+            [
+                "0e4bc38219659e1c"
+            ]
+        ]
+    },
+    {
+        "id": "ec84b1a51c259b8f",
+        "type": "inject",
+        "z": "a70b308d97d0a0ed",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "1",
+        "payloadType": "num",
+        "x": 370,
+        "y": 560,
+        "wires": [
+            [
+                "d8c19af7c11134bf"
+            ]
+        ]
+    },
+    {
+        "id": "832064474e6657c1",
         "type": "inject",
         "z": "a70b308d97d0a0ed",
         "name": "",
@@ -376,31 +422,69 @@
         "topic": "",
         "payload": "0",
         "payloadType": "num",
-        "x": 350,
-        "y": 560,
+        "x": 370,
+        "y": 620,
         "wires": [
             [
-                "5533ae5039db6c09",
-                "d8c19af7c11134bf",
-                "abfba9beeca11254"
+                "d8c19af7c11134bf"
             ]
         ]
     },
     {
-        "id": "fee7ac5ad9a14aa3",
-        "type": "rpi-gpio in",
+        "id": "11dad22784f1ddd2",
+        "type": "inject",
         "z": "a70b308d97d0a0ed",
         "name": "",
-        "pin": "20",
-        "intype": "tri",
-        "debounce": "25",
-        "read": false,
-        "bcm": true,
-        "x": 330,
-        "y": 300,
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "1",
+        "payloadType": "num",
+        "x": 370,
+        "y": 700,
         "wires": [
             [
-                "0e4bc38219659e1c"
+                "5533ae5039db6c09"
+            ]
+        ]
+    },
+    {
+        "id": "5ba0e66980547380",
+        "type": "inject",
+        "z": "a70b308d97d0a0ed",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "0",
+        "payloadType": "num",
+        "x": 370,
+        "y": 760,
+        "wires": [
+            [
+                "5533ae5039db6c09"
             ]
         ]
     }
