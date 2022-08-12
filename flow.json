@@ -696,7 +696,7 @@
         "type": "split",
         "z": "a70b308d97d0a0ed",
         "name": "",
-        "splt": "<HTML><HEAD><TITLE>302 Moved Temporarily</TITLE></HEAD> <BODY> <H1>302 Moved</H1>The document has moved <A HREF=\"http://190.139.210.197:80/cgi-bin/login.asp\">here</A>. </BODY></HTML>",
+        "splt": "<HTML>",
         "spltType": "str",
         "arraySplt": "1",
         "arraySpltType": "len",
