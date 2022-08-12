@@ -534,7 +534,7 @@
         "type": "json",
         "z": "f1eb68bd8dddaee2",
         "name": "",
-        "property": "payload",
+        "property": "ubicacion",
         "action": "",
         "pretty": false,
         "x": 470,
