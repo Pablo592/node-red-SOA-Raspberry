@@ -322,7 +322,7 @@
         "props": [
             {
                 "p": "payload.color",
-                "v": "Verde",
+                "v": "Rojo",
                 "vt": "str"
             }
         ],
@@ -421,12 +421,15 @@
         "fieldType": "msg",
         "format": "handlebars",
         "syntax": "mustache",
-        "template": "This is the payload: {{payload}} !",
+        "template": "msg.payload = 0;\nreturn msg;",
         "output": "str",
         "x": 660,
         "y": 580,
         "wires": [
-            []
+            [
+                "d8c19af7c11134bf",
+                "5533ae5039db6c09"
+            ]
         ]
     },
     {
@@ -443,7 +446,9 @@
         "x": 660,
         "y": 440,
         "wires": [
-            []
+            [
+                "abfba9beeca11254"
+            ]
         ]
     }
 ]
