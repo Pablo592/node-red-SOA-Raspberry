@@ -375,7 +375,7 @@
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "payload.uno",
+        "complete": "payload",
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
