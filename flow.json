@@ -535,23 +535,6 @@
         "wires": []
     },
     {
-        "id": "d7dcf17a3d1616e2",
-        "type": "function",
-        "z": "a70b308d97d0a0ed",
-        "name": "function 1",
-        "func": "navigator.geolocation.getCurrentPosition(position => {\n    console.log(position);\n});",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 560,
-        "y": 560,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "1c5ff423cdc5d04c",
         "type": "inject",
         "z": "a70b308d97d0a0ed",
@@ -575,9 +558,44 @@
         "x": 120,
         "y": 520,
         "wires": [
+            []
+        ]
+    },
+    {
+        "id": "52d858d23f0f5d91",
+        "type": "gpsd",
+        "z": "a70b308d97d0a0ed",
+        "name": "",
+        "hostname": "localhost",
+        "port": "2947",
+        "tpv": true,
+        "sky": false,
+        "info": false,
+        "device": false,
+        "gst": false,
+        "att": false,
+        "x": 130,
+        "y": 440,
+        "wires": [
             [
-                "d7dcf17a3d1616e2"
+                "7dfbfae08f43996d"
             ]
         ]
+    },
+    {
+        "id": "7dfbfae08f43996d",
+        "type": "debug",
+        "z": "a70b308d97d0a0ed",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 560,
+        "y": 440,
+        "wires": []
     }
 ]
