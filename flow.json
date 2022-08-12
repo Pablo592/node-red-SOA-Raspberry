@@ -633,14 +633,36 @@
         "y": 560,
         "wires": [
             [
-                "4a8fb458d19c4810"
+                "f3941428846684ae"
             ],
             [],
             []
         ]
     },
     {
-        "id": "4a8fb458d19c4810",
+        "id": "f3941428846684ae",
+        "type": "exec",
+        "z": "a70b308d97d0a0ed",
+        "command": "curl ipinfo.io/",
+        "addpay": "payload",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 730,
+        "y": 560,
+        "wires": [
+            [
+                "93573ada857dfa02"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "93573ada857dfa02",
         "type": "debug",
         "z": "a70b308d97d0a0ed",
         "name": "debug 3",
@@ -651,8 +673,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 880,
-        "y": 540,
+        "x": 940,
+        "y": 560,
         "wires": []
     }
 ]
