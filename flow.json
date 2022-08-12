@@ -87,11 +87,11 @@
         ],
         "out": [
             {
-                "x": 640,
+                "x": 620,
                 "y": 160,
                 "wires": [
                     {
-                        "id": "8c276f9512f84d09",
+                        "id": "4808205d1f385054",
                         "port": 0
                     }
                 ]
@@ -464,8 +464,8 @@
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 770,
-        "y": 80,
+        "x": 310,
+        "y": 160,
         "wires": [
             [
                 "4808205d1f385054"
@@ -483,8 +483,8 @@
         "arraySpltType": "len",
         "stream": false,
         "addname": "",
-        "x": 610,
-        "y": 80,
+        "x": 170,
+        "y": 160,
         "wires": [
             [
                 "6f2e636c2084d967"
@@ -501,43 +501,8 @@
         "format": "handlebars",
         "syntax": "mustache",
         "template": "\n{\n \"city\":\"{{payload.city}}\",\n \"region\":\"{{payload.region}}\",\n \"country\":\"{{payload.country}}\",\n \"loc\":\"{{payload.loc}}\",\n \"postal\":\"{{payload.postal}}\",\n \"timezone\":\"{{payload.timezone}}\"\n}",
-        "output": "str",
-        "x": 160,
-        "y": 160,
-        "wires": [
-            [
-                "35bb8abd3e920e86"
-            ]
-        ]
-    },
-    {
-        "id": "35bb8abd3e920e86",
-        "type": "function",
-        "z": "f1eb68bd8dddaee2",
-        "name": "function 1",
-        "func": "if (!msg.ubicacion.timezone) return msg;\nlet timez = msg.ubicacion.timezone;\ntimez = timez.replace('&#x2F;', '/');\nmsg.ubicacion.timezone = timez;\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 320,
-        "y": 160,
-        "wires": [
-            [
-                "8c276f9512f84d09"
-            ]
-        ]
-    },
-    {
-        "id": "8c276f9512f84d09",
-        "type": "json",
-        "z": "f1eb68bd8dddaee2",
-        "name": "",
-        "property": "ubicacion",
-        "action": "",
-        "pretty": false,
-        "x": 470,
+        "output": "json",
+        "x": 460,
         "y": 160,
         "wires": [
             []
