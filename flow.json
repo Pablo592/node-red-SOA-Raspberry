@@ -438,7 +438,7 @@
         "type": "template",
         "z": "a70b308d97d0a0ed",
         "name": "",
-        "field": "payload.payload",
+        "field": "payload",
         "fieldType": "msg",
         "format": "handlebars",
         "syntax": "mustache",
