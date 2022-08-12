@@ -694,7 +694,8 @@
         "y": 560,
         "wires": [
             [
-                "cf6fb67b8e6edf29"
+                "8a7c89a5a5c22927",
+                "149babe91a01df83"
             ]
         ]
     },
@@ -713,22 +714,5 @@
         "x": 1080,
         "y": 700,
         "wires": []
-    },
-    {
-        "id": "cf6fb67b8e6edf29",
-        "type": "json",
-        "z": "a70b308d97d0a0ed",
-        "name": "",
-        "property": "payload",
-        "action": "",
-        "pretty": false,
-        "x": 650,
-        "y": 560,
-        "wires": [
-            [
-                "8a7c89a5a5c22927",
-                "149babe91a01df83"
-            ]
-        ]
     }
 ]
