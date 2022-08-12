@@ -500,7 +500,7 @@
         "fieldType": "msg",
         "format": "handlebars",
         "syntax": "mustache",
-        "template": "\n{\n \"hostname\":{{msg.payload.hostname}},\n \"city\":{{msg.payload.city}},\n \"region\":{{msg.payload.region}},\n \"country\":{{msg.payload.country}},\n \"loc\":{{msg.payload.loc}},\n \"org\":{{msg.payload.org}},\n \"postal\":{{msg.payload.postal}},\n \"timezone\":{{msg.payload.timezone}}\n}",
+        "template": "\n{\n \"hostname\":\"{{payload.hostname}}\",\n \"city\":\"{{payload.city}}\",\n \"region\":\"{{payload.region}}\",\n \"country\":\"{{payload.country}}\",\n \"loc\":\"{{payload.loc}}\",\n \"org\":\"{{payload.org}}\",\n \"postal\":\"{{payload.postal}}\",\n \"timezone\":\"{{payload.timezone}}\"\n}",
         "output": "str",
         "x": 960,
         "y": 80,
