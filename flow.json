@@ -70,35 +70,6 @@
         "out": []
     },
     {
-        "id": "2f85385d3784c890",
-        "type": "subflow",
-        "name": "Subflow 4",
-        "info": "",
-        "in": [
-            {
-                "x": 20,
-                "y": 80,
-                "wires": [
-                    {
-                        "id": "f1b02bd38c191af5"
-                    }
-                ]
-            }
-        ],
-        "out": [
-            {
-                "x": 880,
-                "y": 80,
-                "wires": [
-                    {
-                        "id": "c2a8a6735f07ef03",
-                        "port": 0
-                    }
-                ]
-            }
-        ]
-    },
-    {
         "id": "9039ce5a53d8ac8d",
         "type": "mqtt-broker",
         "name": "",
@@ -413,83 +384,6 @@
         ]
     },
     {
-        "id": "f1b02bd38c191af5",
-        "type": "exec",
-        "z": "2f85385d3784c890",
-        "command": "curl -s icanhazip.com",
-        "addpay": "",
-        "append": "",
-        "useSpawn": "false",
-        "timer": "",
-        "winHide": false,
-        "oldrc": false,
-        "name": "",
-        "x": 200,
-        "y": 80,
-        "wires": [
-            [
-                "f3941428846684ae"
-            ],
-            [],
-            []
-        ]
-    },
-    {
-        "id": "f3941428846684ae",
-        "type": "exec",
-        "z": "2f85385d3784c890",
-        "command": "curl ipinfo.io/",
-        "addpay": "payload",
-        "append": "",
-        "useSpawn": "false",
-        "timer": "",
-        "winHide": false,
-        "oldrc": false,
-        "name": "",
-        "x": 430,
-        "y": 80,
-        "wires": [
-            [
-                "32e138b4f629d89b"
-            ],
-            [],
-            []
-        ]
-    },
-    {
-        "id": "c2a8a6735f07ef03",
-        "type": "json",
-        "z": "2f85385d3784c890",
-        "name": "",
-        "property": "payload",
-        "action": "",
-        "pretty": false,
-        "x": 750,
-        "y": 80,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "32e138b4f629d89b",
-        "type": "split",
-        "z": "2f85385d3784c890",
-        "name": "",
-        "splt": "<HTML",
-        "spltType": "str",
-        "arraySplt": "1",
-        "arraySpltType": "len",
-        "stream": false,
-        "addname": "",
-        "x": 590,
-        "y": 80,
-        "wires": [
-            [
-                "c2a8a6735f07ef03"
-            ]
-        ]
-    },
-    {
         "id": "08c849a2151be731",
         "type": "subflow:0ba476ce26e5c034",
         "z": "a70b308d97d0a0ed",
@@ -719,7 +613,7 @@
         "y": 560,
         "wires": [
             [
-                "c604999393b37844"
+                "f5b6bbc15439bbef"
             ]
         ]
     },
@@ -735,19 +629,85 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 580,
-        "y": 560,
+        "x": 740,
+        "y": 420,
         "wires": []
     },
     {
-        "id": "c604999393b37844",
-        "type": "subflow:2f85385d3784c890",
+        "id": "f5b6bbc15439bbef",
+        "type": "exec",
         "z": "a70b308d97d0a0ed",
-        "name": "Obtener Ubicacion",
-        "x": 350,
+        "command": "curl -s icanhazip.com",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 340,
         "y": 560,
         "wires": [
             [
+                "135a9943e3d30d49"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "135a9943e3d30d49",
+        "type": "exec",
+        "z": "a70b308d97d0a0ed",
+        "command": "curl ipinfo.io/",
+        "addpay": "payload",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 570,
+        "y": 560,
+        "wires": [
+            [
+                "0b93cd2b8436f390",
+                "93573ada857dfa02"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "6f2e636c2084d967",
+        "type": "json",
+        "z": "a70b308d97d0a0ed",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 890,
+        "y": 560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0b93cd2b8436f390",
+        "type": "split",
+        "z": "a70b308d97d0a0ed",
+        "name": "",
+        "splt": "<HTML",
+        "spltType": "str",
+        "arraySplt": "1",
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 730,
+        "y": 560,
+        "wires": [
+            [
+                "6f2e636c2084d967",
                 "93573ada857dfa02"
             ]
         ]
