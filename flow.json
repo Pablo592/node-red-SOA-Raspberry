@@ -699,7 +699,7 @@
         "type": "split",
         "z": "a70b308d97d0a0ed",
         "name": "",
-        "splt": "}",
+        "splt": "<H",
         "spltType": "str",
         "arraySplt": 1,
         "arraySpltType": "len",
