@@ -87,11 +87,11 @@
         ],
         "out": [
             {
-                "x": 900,
+                "x": 1160,
                 "y": 80,
                 "wires": [
                     {
-                        "id": "6f2e636c2084d967",
+                        "id": "4808205d1f385054",
                         "port": 0
                     }
                 ]
@@ -467,7 +467,9 @@
         "x": 770,
         "y": 80,
         "wires": [
-            []
+            [
+                "4808205d1f385054"
+            ]
         ]
     },
     {
@@ -487,6 +489,23 @@
             [
                 "6f2e636c2084d967"
             ]
+        ]
+    },
+    {
+        "id": "4808205d1f385054",
+        "type": "template",
+        "z": "f1eb68bd8dddaee2",
+        "name": "",
+        "field": "ubicacion",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "{\n    {{msg.payload.hostname}},\n    {{msg.payload.city}},\n    {{msg.payload.region}},\n    {{msg.payload.country}},\n    {{msg.payload.loc}},\n    {{msg.payload.org}},\n    {{msg.payload.postal}},\n    {{msg.payload.timezone}}\n}",
+        "output": "str",
+        "x": 960,
+        "y": 80,
+        "wires": [
+            []
         ]
     },
     {
