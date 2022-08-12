@@ -608,7 +608,8 @@
         "y": 560,
         "wires": [
             [
-                "d2ec67cf9f158ad6"
+                "d2ec67cf9f158ad6",
+                "149babe91a01df83"
             ]
         ]
     },
@@ -690,7 +691,7 @@
         "syntax": "mustache",
         "template": "ipinfo.io/{{payload}}",
         "output": "str",
-        "x": 500,
+        "x": 560,
         "y": 560,
         "wires": [
             [
