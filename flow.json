@@ -87,7 +87,7 @@
         ],
         "out": [
             {
-                "x": 620,
+                "x": 580,
                 "y": 160,
                 "wires": [
                     {
@@ -464,7 +464,7 @@
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 310,
+        "x": 270,
         "y": 160,
         "wires": [
             [
@@ -483,7 +483,7 @@
         "arraySpltType": "len",
         "stream": false,
         "addname": "",
-        "x": 170,
+        "x": 130,
         "y": 160,
         "wires": [
             [
@@ -502,7 +502,7 @@
         "syntax": "mustache",
         "template": "\n{\n \"city\":\"{{payload.city}}\",\n \"region\":\"{{payload.region}}\",\n \"country\":\"{{payload.country}}\",\n \"loc\":\"{{payload.loc}}\",\n \"postal\":\"{{payload.postal}}\",\n \"timezone\":\"{{payload.timezone}}\"\n}",
         "output": "json",
-        "x": 460,
+        "x": 420,
         "y": 160,
         "wires": [
             []
@@ -751,7 +751,7 @@
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "payload.ubicacion",
+        "complete": "ubicacion",
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
