@@ -88,10 +88,14 @@
         "out": [
             {
                 "x": 1240,
-                "y": 80,
+                "y": 180,
                 "wires": [
                     {
                         "id": "903d869093307c51",
+                        "port": 0
+                    },
+                    {
+                        "id": "6f2e636c2084d967",
                         "port": 0
                     }
                 ]
@@ -483,7 +487,7 @@
         "arraySpltType": "len",
         "stream": false,
         "addname": "",
-        "x": 590,
+        "x": 610,
         "y": 80,
         "wires": [
             [
