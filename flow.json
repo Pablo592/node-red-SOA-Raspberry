@@ -349,10 +349,6 @@
                 "p": "payload.color",
                 "v": "Rojo",
                 "vt": "str"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
             }
         ],
         "repeat": "",
