@@ -608,7 +608,7 @@
         "y": 560,
         "wires": [
             [
-                "3b8f6204bd59bed2"
+                "d2ec67cf9f158ad6"
             ]
         ]
     },
@@ -653,8 +653,49 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 740,
+        "x": 860,
         "y": 560,
         "wires": []
+    },
+    {
+        "id": "8a7c89a5a5c22927",
+        "type": "http request",
+        "z": "a70b308d97d0a0ed",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": false,
+        "url": "",
+        "persist": false,
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 670,
+        "y": 560,
+        "wires": [
+            [
+                "3b8f6204bd59bed2"
+            ]
+        ]
+    },
+    {
+        "id": "d2ec67cf9f158ad6",
+        "type": "template",
+        "z": "a70b308d97d0a0ed",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "url =  ipinfo.io/payload",
+        "output": "str",
+        "x": 500,
+        "y": 560,
+        "wires": [
+            [
+                "8a7c89a5a5c22927"
+            ]
+        ]
     }
 ]
