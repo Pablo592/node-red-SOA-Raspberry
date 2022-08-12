@@ -688,7 +688,7 @@
         "fieldType": "msg",
         "format": "handlebars",
         "syntax": "mustache",
-        "template": "url =  ipinfo.io/payload",
+        "template": "{\"url\":\"ipinfo.io/{{payload}}\"}",
         "output": "str",
         "x": 500,
         "y": 560,
