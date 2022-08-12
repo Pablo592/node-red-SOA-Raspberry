@@ -533,5 +533,51 @@
         "x": 410,
         "y": 340,
         "wires": []
+    },
+    {
+        "id": "d7dcf17a3d1616e2",
+        "type": "function",
+        "z": "a70b308d97d0a0ed",
+        "name": "function 1",
+        "func": "navigator.geolocation.getCurrentPosition(position => {\n    console.log(position);\n});",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1c5ff423cdc5d04c",
+        "type": "inject",
+        "z": "a70b308d97d0a0ed",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 520,
+        "wires": [
+            [
+                "d7dcf17a3d1616e2"
+            ]
+        ]
     }
 ]
