@@ -685,13 +685,13 @@
         "type": "template",
         "z": "a70b308d97d0a0ed",
         "name": "",
-        "field": "payload.url",
+        "field": "payload.req.url",
         "fieldType": "msg",
         "format": "handlebars",
         "syntax": "mustache",
         "template": "ipinfo.io/{{payload}}",
         "output": "str",
-        "x": 560,
+        "x": 600,
         "y": 560,
         "wires": [
             [
