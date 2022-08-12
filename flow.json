@@ -370,8 +370,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 860,
-        "y": 800,
+        "x": 1480,
+        "y": 500,
         "wires": []
     },
     {
@@ -440,7 +440,7 @@
         "name": "",
         "field": "payload.payload",
         "fieldType": "msg",
-        "format": "html",
+        "format": "handlebars",
         "syntax": "mustache",
         "template": "1",
         "output": "str",
