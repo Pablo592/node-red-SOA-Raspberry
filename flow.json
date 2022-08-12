@@ -324,25 +324,6 @@
         ]
     },
     {
-        "id": "49dbb58e96154c33",
-        "type": "function",
-        "z": "a70b308d97d0a0ed",
-        "name": "function 1",
-        "func": "msg.payload = { \"uno\": \"\" }, { \"dos\": \"\" }, { \"tres\": \"\"};\n\n\nmsg.payload.uno = '1';\nmsg.payload.dos = '0';\nmsg.payload.tres = '0';\nreturn msg;\n/*\n\nswitch (msg.payload.color) {\n    case \"Rojo\": {\n        return [numero(1), numero(0), numero(0)];\n    }\n    case \"Verde\": {\n        return [numero(0), numero(1), numero(0)];\n    }\n    case \"Azul\": {\n        return [numero(0), numero(0), numero(1)];\n    }\n    default: {\n        return [numero(0), numero(0), numero(0)];\n    }\n}\n\nfunction numero(num) {\n    msg.payload = num;\n    return msg;\n}*/",
-        "outputs": 3,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 380,
-        "y": 520,
-        "wires": [
-            [],
-            [],
-            []
-        ]
-    },
-    {
         "id": "8790e51979b82db4",
         "type": "inject",
         "z": "a70b308d97d0a0ed",
@@ -363,8 +344,8 @@
         "y": 520,
         "wires": [
             [
-                "49dbb58e96154c33",
-                "3ebdc60c316b49df"
+                "3ebdc60c316b49df",
+                "fbfcf0ac9fecb882"
             ]
         ]
     },
@@ -401,5 +382,26 @@
         "x": 920,
         "y": 920,
         "wires": []
+    },
+    {
+        "id": "fbfcf0ac9fecb882",
+        "type": "function",
+        "z": "a70b308d97d0a0ed",
+        "name": "function 1",
+        "func": "msg.payload = { \"uno\": \"\" }, { \"dos\": \"\" }, { \"tres\": \"\" };\n\n\nmsg.payload.uno = '1';\nmsg.payload.dos = '0';\nmsg.payload.tres = '0';\nreturn msg;\n/*\n\nswitch (msg.payload.color) {\n    case \"Rojo\": {\n        return [numero(1), numero(0), numero(0)];\n    }\n    case \"Verde\": {\n        return [numero(0), numero(1), numero(0)];\n    }\n    case \"Azul\": {\n        return [numero(0), numero(0), numero(1)];\n    }\n    default: {\n        return [numero(0), numero(0), numero(0)];\n    }\n}\n\nfunction numero(num) {\n    msg.payload = num;\n    return msg;\n}*/",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 480,
+        "wires": [
+            [
+                "abfba9beeca11254",
+                "d8c19af7c11134bf",
+                "5533ae5039db6c09"
+            ]
+        ]
     }
 ]
