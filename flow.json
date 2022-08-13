@@ -552,23 +552,6 @@
         ]
     },
     {
-        "id": "9aa1d34dd11fd148",
-        "type": "debug",
-        "z": "a70b308d97d0a0ed",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 490,
-        "y": 220,
-        "wires": []
-    },
-    {
         "id": "96949194bc3dd5b9",
         "type": "mqtt out",
         "z": "a70b308d97d0a0ed",
@@ -660,8 +643,8 @@
         "type": "subflow:e92dc53c81852ec7",
         "z": "a70b308d97d0a0ed",
         "name": "Setear color en led",
-        "x": 710,
-        "y": 380,
+        "x": 690,
+        "y": 240,
         "wires": []
     },
     {
@@ -681,8 +664,8 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 570,
-        "y": 500,
+        "x": 390,
+        "y": 320,
         "wires": [
             [
                 "5f844d3ebda3036b"
@@ -715,30 +698,13 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 220,
-        "y": 360,
+        "x": 280,
+        "y": 240,
         "wires": [
             [
-                "c56dd38984bb6540",
                 "25fd2c6672854875"
             ]
         ]
-    },
-    {
-        "id": "c56dd38984bb6540",
-        "type": "debug",
-        "z": "a70b308d97d0a0ed",
-        "name": "debug 4",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 500,
-        "y": 300,
-        "wires": []
     },
     {
         "id": "25fd2c6672854875",
@@ -752,7 +718,7 @@
         "finalize": "",
         "libs": [],
         "x": 500,
-        "y": 380,
+        "y": 240,
         "wires": [
             [
                 "5f844d3ebda3036b"
@@ -782,8 +748,7 @@
         "y": 140,
         "wires": [
             [
-                "96949194bc3dd5b9",
-                "9aa1d34dd11fd148"
+                "96949194bc3dd5b9"
             ]
         ]
     }
