@@ -514,7 +514,7 @@
         "type": "subflow:0ba476ce26e5c034",
         "z": "a70b308d97d0a0ed",
         "name": "Conexión Sensor de temperatura y humedad",
-        "x": 430,
+        "x": 690,
         "y": 60,
         "wires": [
             [
@@ -548,7 +548,7 @@
         "y": 60,
         "wires": [
             [
-                "08c849a2151be731"
+                "3b337c9016b3dae3"
             ]
         ]
     },
@@ -561,10 +561,11 @@
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "false",
+        "complete": "true",
+        "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 870,
+        "x": 1110,
         "y": 60,
         "wires": []
     },
@@ -582,7 +583,7 @@
         "correl": "",
         "expiry": "",
         "broker": "9039ce5a53d8ac8d",
-        "x": 890,
+        "x": 1150,
         "y": 100,
         "wires": []
     },
@@ -599,8 +600,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 400,
-        "y": 380,
+        "x": 1380,
+        "y": 740,
         "wires": []
     },
     {
@@ -616,8 +617,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 400,
-        "y": 440,
+        "x": 1380,
+        "y": 800,
         "wires": []
     },
     {
@@ -629,8 +630,8 @@
         "CSpin": "24",
         "dataBlockAddr": 8,
         "dataBlockLength": 4,
-        "x": 160,
-        "y": 380,
+        "x": 1140,
+        "y": 740,
         "wires": [
             [
                 "dd17daac6b6ba719"
@@ -647,8 +648,8 @@
         "debounce": "25",
         "read": false,
         "bcm": true,
-        "x": 110,
-        "y": 440,
+        "x": 1090,
+        "y": 800,
         "wires": [
             [
                 "0e4bc38219659e1c"
@@ -661,7 +662,7 @@
         "z": "a70b308d97d0a0ed",
         "name": "Setear color en led",
         "x": 670,
-        "y": 200,
+        "y": 360,
         "wires": []
     },
     {
@@ -682,39 +683,10 @@
         "onceDelay": 0.1,
         "topic": "",
         "x": 330,
-        "y": 280,
+        "y": 440,
         "wires": [
             [
                 "5f844d3ebda3036b"
-            ]
-        ]
-    },
-    {
-        "id": "95e4d84ae0cd10cb",
-        "type": "inject",
-        "z": "a70b308d97d0a0ed",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 120,
-        "y": 620,
-        "wires": [
-            [
-                "3b337c9016b3dae3"
             ]
         ]
     },
@@ -731,8 +703,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 720,
-        "y": 620,
+        "x": 600,
+        "y": 160,
         "wires": []
     },
     {
@@ -740,11 +712,12 @@
         "type": "subflow:f1eb68bd8dddaee2",
         "z": "a70b308d97d0a0ed",
         "name": "Obtener mi ubicacion",
-        "x": 320,
-        "y": 620,
+        "x": 360,
+        "y": 60,
         "wires": [
             [
-                "93573ada857dfa02"
+                "93573ada857dfa02",
+                "08c849a2151be731"
             ]
         ]
     },
@@ -762,7 +735,7 @@
         "rh": 0,
         "inputs": 0,
         "x": 180,
-        "y": 180,
+        "y": 340,
         "wires": [
             [
                 "c56dd38984bb6540",
@@ -783,7 +756,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 460,
-        "y": 120,
+        "y": 280,
         "wires": []
     },
     {
@@ -798,7 +771,7 @@
         "finalize": "",
         "libs": [],
         "x": 460,
-        "y": 200,
+        "y": 360,
         "wires": [
             [
                 "5f844d3ebda3036b"
