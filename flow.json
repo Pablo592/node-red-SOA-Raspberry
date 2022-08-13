@@ -755,7 +755,7 @@
         "name": "",
         "topic": "casa/habitacion/autenticacion",
         "qos": "2",
-        "datatype": "auto-detect",
+        "datatype": "utf8",
         "broker": "9039ce5a53d8ac8d",
         "nl": false,
         "rap": true,
