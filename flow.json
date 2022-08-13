@@ -228,7 +228,7 @@
         "type": "switch",
         "z": "e92dc53c81852ec7",
         "name": "",
-        "property": "payload.color",
+        "property": "color",
         "propertyType": "msg",
         "rules": [
             {
@@ -766,7 +766,7 @@
         "wires": [
             [
                 "c56dd38984bb6540",
-                "fa0b28ee885160c8"
+                "25fd2c6672854875"
             ]
         ]
     },
@@ -791,7 +791,7 @@
         "type": "function",
         "z": "a70b308d97d0a0ed",
         "name": "function 1",
-        "func": "var paquete = msg.payload.contenido;\n\nif (paquete.includes(\"RequestError\") || paquete.includes(\"404\"))\n    msg.payload.color = \"Rojo\";\n\nif (paquete.includes(\"403\"))\n    msg.payload.color = \"Amarillo\";\n\nif (paquete.includes(\"201\"))\n    msg.payload.color = \"Verde\";\n    \nmsg.payload.color = \"Rojo\";\nreturn msg;",
+        "func": "var paquete = msg.payload.contenido;\n\nif (paquete.includes(\"RequestError\") || paquete.includes(\"404\"))\n    msg.color = \"Rojo\";\n\nif (paquete.includes(\"403\"))\n    msg.color = \"Amarillo\";\n\nif (paquete.includes(\"201\"))\n    msg.color = \"Verde\";\n    \nmsg.color = \"Rojo\";\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -870,41 +870,5 @@
         "wires": [
             []
         ]
-    },
-    {
-        "id": "fa0b28ee885160c8",
-        "type": "template",
-        "z": "a70b308d97d0a0ed",
-        "name": "",
-        "field": "payload",
-        "fieldType": "msg",
-        "format": "handlebars",
-        "syntax": "mustache",
-        "template": "{\n    \"contenido\":{{{payload}}},\n    \"color\":\"\";\n}",
-        "output": "json",
-        "x": 360,
-        "y": 340,
-        "wires": [
-            [
-                "25fd2c6672854875",
-                "5af6084f8d72fc17"
-            ]
-        ]
-    },
-    {
-        "id": "5af6084f8d72fc17",
-        "type": "debug",
-        "z": "a70b308d97d0a0ed",
-        "name": "debug 6",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 660,
-        "y": 480,
-        "wires": []
     }
 ]
