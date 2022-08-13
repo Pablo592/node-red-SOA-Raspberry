@@ -518,7 +518,6 @@
         "y": 60,
         "wires": [
             [
-                "9aa1d34dd11fd148",
                 "6a2a399568432e3e"
             ]
         ]
@@ -565,8 +564,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1210,
-        "y": 20,
+        "x": 490,
+        "y": 220,
         "wires": []
     },
     {
@@ -583,8 +582,8 @@
         "correl": "",
         "expiry": "",
         "broker": "9039ce5a53d8ac8d",
-        "x": 1290,
-        "y": 100,
+        "x": 530,
+        "y": 140,
         "wires": []
     },
     {
@@ -661,8 +660,8 @@
         "type": "subflow:e92dc53c81852ec7",
         "z": "a70b308d97d0a0ed",
         "name": "Setear color en led",
-        "x": 670,
-        "y": 360,
+        "x": 690,
+        "y": 480,
         "wires": []
     },
     {
@@ -682,30 +681,13 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 330,
-        "y": 440,
+        "x": 350,
+        "y": 560,
         "wires": [
             [
                 "5f844d3ebda3036b"
             ]
         ]
-    },
-    {
-        "id": "93573ada857dfa02",
-        "type": "debug",
-        "z": "a70b308d97d0a0ed",
-        "name": "debug 3",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "ubicacion",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 600,
-        "y": 160,
-        "wires": []
     },
     {
         "id": "3b337c9016b3dae3",
@@ -716,7 +698,6 @@
         "y": 60,
         "wires": [
             [
-                "93573ada857dfa02",
                 "08c849a2151be731"
             ]
         ]
@@ -734,8 +715,8 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 180,
-        "y": 340,
+        "x": 200,
+        "y": 460,
         "wires": [
             [
                 "c56dd38984bb6540",
@@ -755,8 +736,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 460,
-        "y": 280,
+        "x": 480,
+        "y": 400,
         "wires": []
     },
     {
@@ -770,8 +751,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 460,
-        "y": 360,
+        "x": 480,
+        "y": 480,
         "wires": [
             [
                 "5f844d3ebda3036b"
@@ -797,11 +778,12 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1040,
-        "y": 100,
+        "x": 240,
+        "y": 140,
         "wires": [
             [
-                "96949194bc3dd5b9"
+                "96949194bc3dd5b9",
+                "9aa1d34dd11fd148"
             ]
         ]
     }
