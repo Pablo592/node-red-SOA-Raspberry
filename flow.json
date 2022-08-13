@@ -881,7 +881,7 @@
         "format": "handlebars",
         "syntax": "mustache",
         "template": "{\n    \"contenido\":{{payload}},\n    \"color\":\"\";\n}",
-        "output": "str",
+        "output": "json",
         "x": 360,
         "y": 340,
         "wires": [
