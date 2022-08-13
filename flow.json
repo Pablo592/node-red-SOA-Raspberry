@@ -880,7 +880,7 @@
         "fieldType": "msg",
         "format": "handlebars",
         "syntax": "mustache",
-        "template": "{\n    \"contenido\":{{payload}},\n    \"color\":\"\";\n}",
+        "template": "{\n    \"contenido\":\"{{payload}}\",\n    \"color\":\"\";\n}",
         "output": "json",
         "x": 360,
         "y": 340,
