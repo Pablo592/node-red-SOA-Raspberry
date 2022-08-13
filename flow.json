@@ -536,14 +536,14 @@
                 "vt": "str"
             }
         ],
-        "repeat": "1",
+        "repeat": "",
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 150,
+        "x": 140,
         "y": 60,
         "wires": [
             [
