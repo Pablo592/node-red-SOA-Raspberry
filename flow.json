@@ -102,7 +102,7 @@
         "id": "9039ce5a53d8ac8d",
         "type": "mqtt-broker",
         "name": "",
-        "broker": "servicesoa.mooo.com",
+        "broker": "localhost",
         "port": "1883",
         "clientid": "",
         "autoConnect": true,
@@ -122,6 +122,7 @@
         "willQos": "0",
         "willPayload": "",
         "willMsg": {},
+        "userProps": "",
         "sessionExpiry": ""
     },
     {
@@ -770,6 +771,25 @@
             [
                 "93573ada857dfa02"
             ]
+        ]
+    },
+    {
+        "id": "d977538e088c78a8",
+        "type": "mqtt in",
+        "z": "a70b308d97d0a0ed",
+        "name": "",
+        "topic": "casa/habitacion/autenticacion",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "9039ce5a53d8ac8d",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 540,
+        "y": 240,
+        "wires": [
+            []
         ]
     }
 ]
