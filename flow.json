@@ -660,8 +660,8 @@
         "type": "subflow:e92dc53c81852ec7",
         "z": "a70b308d97d0a0ed",
         "name": "Setear color en led",
-        "x": 690,
-        "y": 480,
+        "x": 710,
+        "y": 380,
         "wires": []
     },
     {
@@ -681,8 +681,8 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 350,
-        "y": 560,
+        "x": 210,
+        "y": 440,
         "wires": [
             [
                 "5f844d3ebda3036b"
@@ -715,8 +715,8 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 200,
-        "y": 460,
+        "x": 220,
+        "y": 360,
         "wires": [
             [
                 "c56dd38984bb6540",
@@ -729,15 +729,15 @@
         "type": "debug",
         "z": "a70b308d97d0a0ed",
         "name": "debug 4",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 480,
-        "y": 400,
+        "x": 500,
+        "y": 300,
         "wires": []
     },
     {
@@ -751,8 +751,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 480,
-        "y": 480,
+        "x": 500,
+        "y": 380,
         "wires": [
             [
                 "5f844d3ebda3036b"
