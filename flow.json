@@ -102,7 +102,7 @@
         "id": "9039ce5a53d8ac8d",
         "type": "mqtt-broker",
         "name": "",
-        "broker": "localhost",
+        "broker": "servicesoa.mooo.com",
         "port": "1883",
         "clientid": "",
         "autoConnect": true,
