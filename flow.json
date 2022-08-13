@@ -557,7 +557,7 @@
         "type": "debug",
         "z": "a70b308d97d0a0ed",
         "name": "",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
