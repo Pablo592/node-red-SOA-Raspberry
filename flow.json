@@ -681,8 +681,8 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 470,
-        "y": 300,
+        "x": 510,
+        "y": 340,
         "wires": [
             [
                 "5f844d3ebda3036b"
@@ -766,7 +766,7 @@
         "wires": [
             [
                 "c56dd38984bb6540",
-                "25fd2c6672854875"
+                "fa0b28ee885160c8"
             ]
         ]
     },
@@ -791,13 +791,13 @@
         "type": "function",
         "z": "a70b308d97d0a0ed",
         "name": "function 1",
-        "func": "var paquete = msg.payload;\n\nif (paquete.includes(\"RequestError\") || paquete.includes(\"404\"))\n    msg.payload.color = \"Rojo\";\n\nif (paquete.includes(\"403\"))\n    msg.payload.color = \"Amarillo\";\n\nif (paquete.includes(\"201\"))\n    msg.payload.color = \"Verde\";\n    \nmsg.payload.color = \"Rojo\";\nreturn msg;",
+        "func": "var paquete = msg.payload.contenido;\n\nif (paquete.includes(\"RequestError\") || paquete.includes(\"404\"))\n    msg.payload.color = \"Rojo\";\n\nif (paquete.includes(\"403\"))\n    msg.payload.color = \"Amarillo\";\n\nif (paquete.includes(\"201\"))\n    msg.payload.color = \"Verde\";\n    \nmsg.payload.color = \"Rojo\";\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 480,
+        "x": 540,
         "y": 240,
         "wires": [
             [
@@ -823,8 +823,8 @@
         "topic": "",
         "payload": "404",
         "payloadType": "str",
-        "x": 130,
-        "y": 300,
+        "x": 250,
+        "y": 340,
         "wires": [
             [
                 "25fd2c6672854875"
@@ -844,8 +844,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 740,
-        "y": 320,
+        "x": 780,
+        "y": 300,
         "wires": []
     },
     {
@@ -869,6 +869,25 @@
         "y": 800,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "fa0b28ee885160c8",
+        "type": "template",
+        "z": "a70b308d97d0a0ed",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "{\n    \"contenido\":{{payload}},\n    \"color\":\"\";\n}",
+        "output": "str",
+        "x": 380,
+        "y": 220,
+        "wires": [
+            [
+                "25fd2c6672854875"
+            ]
         ]
     }
 ]
