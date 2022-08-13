@@ -840,7 +840,7 @@
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "payload",
+        "complete": "payload.color",
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
