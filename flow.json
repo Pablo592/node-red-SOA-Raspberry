@@ -847,5 +847,28 @@
         "x": 740,
         "y": 320,
         "wires": []
+    },
+    {
+        "id": "8a73cdf574bc60f9",
+        "type": "switch",
+        "z": "a70b308d97d0a0ed",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 450,
+        "y": 800,
+        "wires": [
+            []
+        ]
     }
 ]
