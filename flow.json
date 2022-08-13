@@ -816,7 +816,7 @@
         "type": "function",
         "z": "a70b308d97d0a0ed",
         "name": "function 1",
-        "func": "let paquete = msg.payload;\n\nif (paquete.includes(\"RequestError\") || paquete.includes(\"404\"))\nmsg.color = \"Rojo\";\n\nif (paquete.includes(\"403\"))\n\n\nreturn msg;",
+        "func": "let paquete = msg.payload;\n\nif (paquete.includes(\"RequestError\") || paquete.includes(\"404\"))\nmsg.color = \"Rojo\";\n\nif (paquete.includes(\"403\"))\nmsg.color = \"Amarillo\";\n\nif (paquete.includes(\"201\"))\nmsg.color = \"Verde\";\n\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
