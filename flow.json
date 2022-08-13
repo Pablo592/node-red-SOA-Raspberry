@@ -695,7 +695,7 @@
         "type": "debug",
         "z": "a70b308d97d0a0ed",
         "name": "debug 3",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
