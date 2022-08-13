@@ -671,7 +671,7 @@
         "name": "Apagar Led",
         "props": [
             {
-                "p": "payload.color",
+                "p": "color",
                 "v": "Apagar",
                 "vt": "str"
             }
