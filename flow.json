@@ -591,7 +591,7 @@
         "type": "debug",
         "z": "a70b308d97d0a0ed",
         "name": "debug 1",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -608,7 +608,7 @@
         "type": "debug",
         "z": "a70b308d97d0a0ed",
         "name": "debug 2",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -748,7 +748,7 @@
         "type": "debug",
         "z": "a70b308d97d0a0ed",
         "name": "debug 3",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -786,10 +786,28 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 540,
-        "y": 240,
+        "x": 180,
+        "y": 180,
         "wires": [
-            []
+            [
+                "c56dd38984bb6540"
+            ]
         ]
+    },
+    {
+        "id": "c56dd38984bb6540",
+        "type": "debug",
+        "z": "a70b308d97d0a0ed",
+        "name": "debug 4",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 500,
+        "y": 180,
+        "wires": []
     }
 ]
