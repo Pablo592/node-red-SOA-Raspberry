@@ -599,8 +599,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 440,
-        "y": 820,
+        "x": 400,
+        "y": 380,
         "wires": []
     },
     {
@@ -616,8 +616,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 440,
-        "y": 880,
+        "x": 400,
+        "y": 440,
         "wires": []
     },
     {
@@ -629,8 +629,8 @@
         "CSpin": "24",
         "dataBlockAddr": 8,
         "dataBlockLength": 4,
-        "x": 200,
-        "y": 820,
+        "x": 160,
+        "y": 380,
         "wires": [
             [
                 "dd17daac6b6ba719"
@@ -647,8 +647,8 @@
         "debounce": "25",
         "read": false,
         "bcm": true,
-        "x": 150,
-        "y": 880,
+        "x": 110,
+        "y": 440,
         "wires": [
             [
                 "0e4bc38219659e1c"
@@ -710,8 +710,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 160,
-        "y": 1060,
+        "x": 120,
+        "y": 620,
         "wires": [
             [
                 "3b337c9016b3dae3"
@@ -731,8 +731,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 580,
-        "y": 1060,
+        "x": 540,
+        "y": 620,
         "wires": []
     },
     {
@@ -740,8 +740,8 @@
         "type": "subflow:f1eb68bd8dddaee2",
         "z": "a70b308d97d0a0ed",
         "name": "Obtener mi ubicacion",
-        "x": 360,
-        "y": 1060,
+        "x": 320,
+        "y": 620,
         "wires": [
             [
                 "93573ada857dfa02"
@@ -803,29 +803,6 @@
             [
                 "5f844d3ebda3036b"
             ]
-        ]
-    },
-    {
-        "id": "8a73cdf574bc60f9",
-        "type": "switch",
-        "z": "a70b308d97d0a0ed",
-        "name": "",
-        "property": "payload",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 410,
-        "y": 1220,
-        "wires": [
-            []
         ]
     }
 ]
