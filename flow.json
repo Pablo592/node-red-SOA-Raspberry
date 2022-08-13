@@ -836,7 +836,7 @@
         "type": "debug",
         "z": "a70b308d97d0a0ed",
         "name": "debug 5",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -886,8 +886,25 @@
         "y": 340,
         "wires": [
             [
-                "25fd2c6672854875"
+                "25fd2c6672854875",
+                "5af6084f8d72fc17"
             ]
         ]
+    },
+    {
+        "id": "5af6084f8d72fc17",
+        "type": "debug",
+        "z": "a70b308d97d0a0ed",
+        "name": "debug 6",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 660,
+        "y": 480,
+        "wires": []
     }
 ]
