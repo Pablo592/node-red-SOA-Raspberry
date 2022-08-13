@@ -497,7 +497,7 @@
         "type": "template",
         "z": "f1eb68bd8dddaee2",
         "name": "",
-        "field": "ubicacion",
+        "field": "payload.ubicacion",
         "fieldType": "msg",
         "format": "handlebars",
         "syntax": "mustache",
