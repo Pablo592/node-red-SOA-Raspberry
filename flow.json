@@ -600,7 +600,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 480,
-        "y": 360,
+        "y": 400,
         "wires": []
     },
     {
@@ -617,7 +617,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 480,
-        "y": 420,
+        "y": 460,
         "wires": []
     },
     {
@@ -630,7 +630,7 @@
         "dataBlockAddr": 8,
         "dataBlockLength": 4,
         "x": 240,
-        "y": 360,
+        "y": 400,
         "wires": [
             [
                 "dd17daac6b6ba719"
@@ -648,35 +648,10 @@
         "read": false,
         "bcm": true,
         "x": 190,
-        "y": 420,
+        "y": 460,
         "wires": [
             [
                 "0e4bc38219659e1c"
-            ]
-        ]
-    },
-    {
-        "id": "8790e51979b82db4",
-        "type": "inject",
-        "z": "a70b308d97d0a0ed",
-        "name": "Establecer color",
-        "props": [
-            {
-                "p": "payload.color",
-                "v": "Amarillo",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "x": 220,
-        "y": 500,
-        "wires": [
-            [
-                "5f844d3ebda3036b"
             ]
         ]
     },
@@ -685,8 +660,8 @@
         "type": "subflow:e92dc53c81852ec7",
         "z": "a70b308d97d0a0ed",
         "name": "Setear color en led",
-        "x": 450,
-        "y": 500,
+        "x": 750,
+        "y": 240,
         "wires": []
     },
     {
@@ -706,8 +681,8 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 210,
-        "y": 580,
+        "x": 470,
+        "y": 300,
         "wires": [
             [
                 "5f844d3ebda3036b"
@@ -825,7 +800,9 @@
         "x": 480,
         "y": 240,
         "wires": [
-            []
+            [
+                "5f844d3ebda3036b"
+            ]
         ]
     }
 ]
