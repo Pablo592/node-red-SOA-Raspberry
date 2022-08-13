@@ -368,8 +368,7 @@
         "y": 380,
         "wires": [
             [
-                "abfba9beeca11254",
-                "d8c19af7c11134bf"
+                "5533ae5039db6c09"
             ]
         ]
     },
@@ -388,7 +387,8 @@
         "y": 420,
         "wires": [
             [
-                "5533ae5039db6c09"
+                "d8c19af7c11134bf",
+                "abfba9beeca11254"
             ]
         ]
     },
@@ -663,7 +663,7 @@
         "props": [
             {
                 "p": "payload.color",
-                "v": "Verde",
+                "v": "Azul",
                 "vt": "str"
             }
         ],
