@@ -151,7 +151,7 @@
         "fieldType": "msg",
         "format": "handlebars",
         "syntax": "mustache",
-        "template": "{\n\"rawData\":{\n    \"temperatura\":\"{{payload.temperature_C}}\",\n    \"humedad\":\"{{payload.humidity}}\",\n    \"presion\":\"{{payload.pressure_hPa}}\"\n    },\n    \"ubicacion\":{\n        \"ciudad\":\"{{payload.ubicacion.city}}\",\n        \"region\":\"{{payload.ubicacion.region}}\",\n        \"pais\":\"{{payload.ubicacion.country}}\",\n        \"coordenadas\":\"{{payload.ubicacion.loc}}\",\n        \"codigoPostal\":\"{{payload.ubicacion.postal}}\",\n        \"zonaHoraria\":\"{{payload.ubicacion.timezone}}\"\n    },\n    \"fechaHoraRecepcion\":\"fecha\",\n    \"categoria\":\"casa\",\n    \"subCategoria\":\"habitacion\",\n    \"identificador\":\"TK01\",\n    \"altitud\":\"altitud\",\n    \"puntoRocio\":\"puntoRocio\"\n}",
+        "template": "{\n\"rawData\":{\n    \"temperatura\":\"{{payload.temperature_C}}\",\n    \"humedad\":\"{{payload.humidity}}\",\n    \"presion\":\"{{payload.pressure_hPa}}\"\n    },\n    \"ubicacion\":{\n        \"ciudad\":\"{{msg.ubicacion.city}}\",\n        \"region\":\"{{msg.ubicacion.region}}\",\n        \"pais\":\"{{msg.ubicacion.country}}\",\n        \"coordenadas\":\"{{msg.ubicacion.loc}}\",\n        \"codigoPostal\":\"{{msg.ubicacion.postal}}\",\n        \"zonaHoraria\":\"{{msg.ubicacion.timezone}}\"\n    },\n    \"fechaHoraRecepcion\":\"fecha\",\n    \"categoria\":\"casa\",\n    \"subCategoria\":\"habitacion\",\n    \"identificador\":\"TK01\",\n    \"altitud\":\"altitud\",\n    \"puntoRocio\":\"puntoRocio\"\n}",
         "output": "json",
         "x": 440,
         "y": 100,
@@ -497,11 +497,11 @@
         "type": "template",
         "z": "f1eb68bd8dddaee2",
         "name": "",
-        "field": "payload.ubicacion",
+        "field": "ubicacion",
         "fieldType": "msg",
         "format": "handlebars",
         "syntax": "mustache",
-        "template": "\n{\n \"city\":\"{{payload.city}}\",\n \"region\":\"{{payload.region}}\",\n \"country\":\"{{payload.country}}\",\n \"loc\":\"{{payload.loc}}\",\n \"postal\":\"{{payload.postal}}\",\n \"timezone\":\"{{payload.timezone}}\"\n}",
+        "template": "\n{\n \"city\":\"{{payload.city}}\",\n \"region\":\"{{payload.region}}\",\n \"pais\":\"{{payload.country}}\",\n \"coordenadas\":\"{{payload.loc}}\",\n \"codigoPostal\":\"{{payload.postal}}\",\n \"zonaHoraria\":\"{{payload.timezone}}\"\n}",
         "output": "json",
         "x": 420,
         "y": 160,
@@ -518,8 +518,7 @@
         "y": 60,
         "wires": [
             [
-                "96949194bc3dd5b9",
-                "9aa1d34dd11fd148"
+                "6a2a399568432e3e"
             ]
         ]
     },
@@ -565,8 +564,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 610,
-        "y": 180,
+        "x": 490,
+        "y": 220,
         "wires": []
     },
     {
@@ -583,8 +582,8 @@
         "correl": "",
         "expiry": "",
         "broker": "9039ce5a53d8ac8d",
-        "x": 1110,
-        "y": 40,
+        "x": 530,
+        "y": 140,
         "wires": []
     },
     {
@@ -757,6 +756,34 @@
         "wires": [
             [
                 "5f844d3ebda3036b"
+            ]
+        ]
+    },
+    {
+        "id": "6a2a399568432e3e",
+        "type": "change",
+        "z": "a70b308d97d0a0ed",
+        "name": "",
+        "rules": [
+            {
+                "t": "move",
+                "p": "ubicacion",
+                "pt": "msg",
+                "to": "payload.ubicacion",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 240,
+        "y": 140,
+        "wires": [
+            [
+                "96949194bc3dd5b9",
+                "9aa1d34dd11fd148"
             ]
         ]
     }
