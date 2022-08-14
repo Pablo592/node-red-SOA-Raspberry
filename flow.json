@@ -630,8 +630,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 580,
-        "y": 320,
+        "x": 540,
+        "y": 400,
         "wires": []
     },
     {
@@ -660,11 +660,11 @@
         "CSpin": "24",
         "dataBlockAddr": 8,
         "dataBlockLength": 4,
-        "x": 160,
-        "y": 180,
+        "x": 140,
+        "y": 240,
         "wires": [
             [
-                "2d20147990ddc268"
+                "e0150ff1dc085382"
             ]
         ]
     },
@@ -691,8 +691,8 @@
         "type": "subflow:e92dc53c81852ec7",
         "z": "a70b308d97d0a0ed",
         "name": "Setear color en led",
-        "x": 1210,
-        "y": 240,
+        "x": 1270,
+        "y": 420,
         "wires": []
     },
     {
@@ -712,8 +712,8 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 1010,
-        "y": 320,
+        "x": 1070,
+        "y": 500,
         "wires": [
             [
                 "5f844d3ebda3036b"
@@ -746,8 +746,8 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 800,
-        "y": 240,
+        "x": 860,
+        "y": 420,
         "wires": [
             [
                 "25fd2c6672854875"
@@ -765,8 +765,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1020,
-        "y": 240,
+        "x": 1080,
+        "y": 420,
         "wires": [
             [
                 "5f844d3ebda3036b"
@@ -806,7 +806,7 @@
         "z": "a70b308d97d0a0ed",
         "name": "",
         "pauseType": "delay",
-        "timeout": "5",
+        "timeout": "30",
         "timeoutUnits": "seconds",
         "rate": "1",
         "nbRateUnits": "1",
@@ -817,28 +817,11 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 520,
-        "y": 700,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "e0150ff1dc085382",
-        "type": "function",
-        "z": "a70b308d97d0a0ed",
-        "name": "function 2",
-        "func": "if(msg.payload.uid === undefined){\n    msg.autorizacion = 0\n}else{\n    msg.autorizacion = 1\n}\n//msg.payload.uid = null;\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 420,
-        "y": 320,
+        "x": 860,
+        "y": 240,
         "wires": [
             [
-                "dd17daac6b6ba719"
+                "550c1288f4a6a718"
             ]
         ]
     },
@@ -866,9 +849,7 @@
         "x": 120,
         "y": 400,
         "wires": [
-            [
-                "e0150ff1dc085382"
-            ]
+            []
         ]
     },
     {
@@ -888,30 +869,79 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 310,
+        "x": 290,
         "y": 60,
         "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e0150ff1dc085382",
+        "type": "function",
+        "z": "a70b308d97d0a0ed",
+        "name": "function 2",
+        "func": "if(msg.payload.uid === undefined){\n    msg.autorizacion = 0\n}else{\n    msg.autorizacion = 1\n}\n//msg.payload.uid = null;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 240,
+        "wires": [
             [
-                "3b337c9016b3dae3",
-                "0dbd58126db070f7"
+                "c765ec807b6c0ae6"
             ]
         ]
     },
     {
-        "id": "0dbd58126db070f7",
-        "type": "debug",
+        "id": "c765ec807b6c0ae6",
+        "type": "change",
         "z": "a70b308d97d0a0ed",
-        "name": "debug 3",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 460,
-        "y": 140,
-        "wires": []
+        "name": "",
+        "rules": [
+            {
+                "t": "move",
+                "p": "payload.autorizacion",
+                "pt": "msg",
+                "to": "autorizacion",
+                "tot": "global"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 610,
+        "y": 240,
+        "wires": [
+            [
+                "91768124121d1879"
+            ]
+        ]
+    },
+    {
+        "id": "550c1288f4a6a718",
+        "type": "change",
+        "z": "a70b308d97d0a0ed",
+        "name": "",
+        "rules": [
+            {
+                "t": "delete",
+                "p": "autorizacion",
+                "pt": "global"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1070,
+        "y": 240,
+        "wires": [
+            []
+        ]
     }
 ]
