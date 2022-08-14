@@ -889,7 +889,7 @@
         "type": "template",
         "z": "a70b308d97d0a0ed",
         "name": "",
-        "field": "payload",
+        "field": "color",
         "fieldType": "msg",
         "format": "handlebars",
         "syntax": "mustache",
