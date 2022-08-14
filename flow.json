@@ -184,7 +184,7 @@
         "z": "e92dc53c81852ec7",
         "name": "",
         "pin": "26",
-        "set": false,
+        "set": true,
         "level": "1",
         "freq": "",
         "out": "out",
@@ -214,8 +214,8 @@
         "z": "e92dc53c81852ec7",
         "name": "",
         "pin": "13",
-        "set": "",
-        "level": "0",
+        "set": true,
+        "level": "1",
         "freq": "",
         "out": "out",
         "bcm": true,
@@ -618,23 +618,6 @@
         "wires": []
     },
     {
-        "id": "dd17daac6b6ba719",
-        "type": "debug",
-        "z": "a70b308d97d0a0ed",
-        "name": "debug 1",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 540,
-        "y": 400,
-        "wires": []
-    },
-    {
         "id": "0e4bc38219659e1c",
         "type": "debug",
         "z": "a70b308d97d0a0ed",
@@ -647,8 +630,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 540,
-        "y": 580,
+        "x": 640,
+        "y": 920,
         "wires": []
     },
     {
@@ -660,8 +643,8 @@
         "CSpin": "24",
         "dataBlockAddr": 8,
         "dataBlockLength": 4,
-        "x": 140,
-        "y": 240,
+        "x": 180,
+        "y": 280,
         "wires": [
             [
                 "c765ec807b6c0ae6"
@@ -678,8 +661,8 @@
         "debounce": "25",
         "read": false,
         "bcm": true,
-        "x": 250,
-        "y": 580,
+        "x": 350,
+        "y": 920,
         "wires": [
             [
                 "0e4bc38219659e1c"
@@ -691,8 +674,8 @@
         "type": "subflow:e92dc53c81852ec7",
         "z": "a70b308d97d0a0ed",
         "name": "Setear color en led",
-        "x": 1270,
-        "y": 420,
+        "x": 1030,
+        "y": 400,
         "wires": []
     },
     {
@@ -712,8 +695,8 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 1070,
-        "y": 500,
+        "x": 830,
+        "y": 480,
         "wires": [
             [
                 "5f844d3ebda3036b"
@@ -746,8 +729,8 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 860,
-        "y": 420,
+        "x": 620,
+        "y": 400,
         "wires": [
             [
                 "25fd2c6672854875"
@@ -765,8 +748,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1080,
-        "y": 420,
+        "x": 840,
+        "y": 400,
         "wires": [
             [
                 "5f844d3ebda3036b"
@@ -817,39 +800,13 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 620,
-        "y": 240,
+        "x": 660,
+        "y": 280,
         "wires": [
             [
-                "550c1288f4a6a718"
+                "550c1288f4a6a718",
+                "af637f214606e9ad"
             ]
-        ]
-    },
-    {
-        "id": "94ab915c5f2b21de",
-        "type": "inject",
-        "z": "a70b308d97d0a0ed",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 120,
-        "y": 400,
-        "wires": [
-            []
         ]
     },
     {
@@ -896,8 +853,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 430,
-        "y": 240,
+        "x": 450,
+        "y": 280,
         "wires": [
             [
                 "91768124121d1879"
@@ -921,10 +878,29 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 850,
-        "y": 240,
+        "x": 890,
+        "y": 280,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "af637f214606e9ad",
+        "type": "template",
+        "z": "a70b308d97d0a0ed",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "Lila",
+        "output": "str",
+        "x": 840,
+        "y": 320,
+        "wires": [
+            [
+                "5f844d3ebda3036b"
+            ]
         ]
     }
 ]
