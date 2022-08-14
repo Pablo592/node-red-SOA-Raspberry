@@ -964,7 +964,7 @@
         "propertyType": "global",
         "rules": [
             {
-                "t": "neq",
+                "t": "eq",
                 "v": "undefined",
                 "vt": "jsonata"
             }
