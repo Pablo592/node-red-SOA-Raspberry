@@ -674,7 +674,7 @@
         "CSpin": "24",
         "dataBlockAddr": 8,
         "dataBlockLength": 4,
-        "x": 180,
+        "x": 140,
         "y": 280,
         "wires": [
             [
@@ -693,7 +693,7 @@
         "read": false,
         "bcm": true,
         "x": 130,
-        "y": 360,
+        "y": 340,
         "wires": [
             [
                 "c765ec807b6c0ae6"
@@ -705,8 +705,8 @@
         "type": "subflow:e92dc53c81852ec7",
         "z": "a70b308d97d0a0ed",
         "name": "Setear color en led",
-        "x": 1090,
-        "y": 400,
+        "x": 1030,
+        "y": 360,
         "wires": []
     },
     {
@@ -726,8 +726,8 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 810,
-        "y": 480,
+        "x": 850,
+        "y": 520,
         "wires": [
             [
                 "5f844d3ebda3036b"
@@ -760,8 +760,8 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 600,
-        "y": 400,
+        "x": 560,
+        "y": 420,
         "wires": [
             [
                 "25fd2c6672854875"
@@ -779,7 +779,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 820,
+        "x": 800,
         "y": 420,
         "wires": [
             [
@@ -819,7 +819,7 @@
         "type": "delay",
         "z": "a70b308d97d0a0ed",
         "name": "",
-        "pauseType": "rate",
+        "pauseType": "delay",
         "timeout": "30",
         "timeoutUnits": "seconds",
         "rate": "999",
@@ -831,7 +831,7 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 690,
+        "x": 560,
         "y": 280,
         "wires": [
             [
@@ -884,14 +884,14 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 450,
+        "x": 315,
         "y": 280,
         "wires": [
             [
-                "91768124121d1879",
-                "a21b74f436bf70cf"
+                "3610a46bd62ca1f9"
             ]
-        ]
+        ],
+        "l": false
     },
     {
         "id": "550c1288f4a6a718",
@@ -910,7 +910,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 970,
+        "x": 850,
         "y": 280,
         "wires": [
             []
@@ -927,7 +927,7 @@
         "syntax": "mustache",
         "template": "Lila",
         "output": "str",
-        "x": 920,
+        "x": 800,
         "y": 320,
         "wires": [
             [
@@ -946,12 +946,39 @@
         "syntax": "mustache",
         "template": "Azul",
         "output": "str",
-        "x": 640,
+        "x": 560,
         "y": 340,
         "wires": [
             [
                 "5f844d3ebda3036b"
             ]
         ]
+    },
+    {
+        "id": "3610a46bd62ca1f9",
+        "type": "switch",
+        "z": "a70b308d97d0a0ed",
+        "name": "",
+        "property": "autorizacion",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "undefined",
+                "vt": "jsonata"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 365,
+        "y": 280,
+        "wires": [
+            [
+                "91768124121d1879",
+                "a21b74f436bf70cf"
+            ]
+        ],
+        "l": false
     }
 ]
