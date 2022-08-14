@@ -980,5 +980,30 @@
             ]
         ],
         "l": false
+    },
+    {
+        "id": "19fbafd1084bb327",
+        "type": "inject",
+        "z": "a70b308d97d0a0ed",
+        "name": "Solicitar permiso de hardware",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "permiso",
+        "payloadType": "str",
+        "x": 200,
+        "y": 600,
+        "wires": [
+            [
+                "3610a46bd62ca1f9"
+            ]
+        ]
     }
 ]
