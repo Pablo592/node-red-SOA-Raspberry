@@ -622,7 +622,7 @@
         "type": "debug",
         "z": "a70b308d97d0a0ed",
         "name": "debug 1",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -630,8 +630,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 540,
-        "y": 520,
+        "x": 420,
+        "y": 460,
         "wires": []
     },
     {
@@ -660,8 +660,8 @@
         "CSpin": "24",
         "dataBlockAddr": 8,
         "dataBlockLength": 4,
-        "x": 300,
-        "y": 520,
+        "x": 180,
+        "y": 460,
         "wires": [
             [
                 "dd17daac6b6ba719"
@@ -798,6 +798,29 @@
             [
                 "96949194bc3dd5b9"
             ]
+        ]
+    },
+    {
+        "id": "91768124121d1879",
+        "type": "delay",
+        "z": "a70b308d97d0a0ed",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 700,
+        "y": 440,
+        "wires": [
+            []
         ]
     }
 ]
