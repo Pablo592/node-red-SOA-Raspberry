@@ -828,7 +828,7 @@
         "type": "function",
         "z": "a70b308d97d0a0ed",
         "name": "function 2",
-        "func": "if(msg.payload.uid === null){\n    msg.autorizacion = 0\n}else{\n    msg.autorizacion = 1\n}\nreturn msg;",
+        "func": "if(msg.payload.uid === null){\n    msg.autorizacion = 0\n}else{\n    msg.autorizacion = 1\n}\nmsg.payload.uid = null;\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -839,35 +839,6 @@
         "wires": [
             [
                 "dd17daac6b6ba719"
-            ]
-        ]
-    },
-    {
-        "id": "450c4326f3e033b8",
-        "type": "inject",
-        "z": "a70b308d97d0a0ed",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 220,
-        "y": 400,
-        "wires": [
-            [
-                "e0150ff1dc085382"
             ]
         ]
     }
