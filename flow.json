@@ -582,8 +582,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1380,
-        "y": 740,
+        "x": 540,
+        "y": 520,
         "wires": []
     },
     {
@@ -599,8 +599,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1380,
-        "y": 800,
+        "x": 540,
+        "y": 580,
         "wires": []
     },
     {
@@ -612,8 +612,8 @@
         "CSpin": "24",
         "dataBlockAddr": 8,
         "dataBlockLength": 4,
-        "x": 1140,
-        "y": 740,
+        "x": 300,
+        "y": 520,
         "wires": [
             [
                 "dd17daac6b6ba719"
@@ -630,8 +630,8 @@
         "debounce": "25",
         "read": false,
         "bcm": true,
-        "x": 1090,
-        "y": 800,
+        "x": 250,
+        "y": 580,
         "wires": [
             [
                 "0e4bc38219659e1c"
