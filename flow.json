@@ -255,11 +255,16 @@
                 "t": "eq",
                 "v": "Lila",
                 "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Azul",
+                "vt": "str"
             }
         ],
         "checkall": "true",
         "repair": false,
-        "outputs": 5,
+        "outputs": 6,
         "x": 170,
         "y": 320,
         "wires": [
@@ -281,6 +286,10 @@
             [
                 "6b8e162b1e8260ea",
                 "654a0d4a6cd53350"
+            ],
+            [
+                "5258b827dbc01ded",
+                "f9955a21ccc6beb2"
             ]
         ]
     },
@@ -455,6 +464,45 @@
         "output": "str",
         "x": 460,
         "y": 680,
+        "wires": [
+            [
+                "d8c19af7c11134bf"
+            ]
+        ]
+    },
+    {
+        "id": "f9955a21ccc6beb2",
+        "type": "template",
+        "z": "e92dc53c81852ec7",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "0",
+        "output": "str",
+        "x": 460,
+        "y": 800,
+        "wires": [
+            [
+                "5533ae5039db6c09",
+                "abfba9beeca11254"
+            ]
+        ]
+    },
+    {
+        "id": "5258b827dbc01ded",
+        "type": "template",
+        "z": "e92dc53c81852ec7",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "1",
+        "output": "str",
+        "x": 460,
+        "y": 760,
         "wires": [
             [
                 "d8c19af7c11134bf"
