@@ -705,7 +705,7 @@
         "type": "subflow:e92dc53c81852ec7",
         "z": "a70b308d97d0a0ed",
         "name": "Setear color en led",
-        "x": 1030,
+        "x": 1090,
         "y": 400,
         "wires": []
     },
@@ -726,7 +726,7 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 830,
+        "x": 810,
         "y": 480,
         "wires": [
             [
@@ -760,7 +760,7 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 620,
+        "x": 600,
         "y": 400,
         "wires": [
             [
@@ -779,8 +779,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 840,
-        "y": 400,
+        "x": 820,
+        "y": 420,
         "wires": [
             [
                 "5f844d3ebda3036b"
@@ -888,7 +888,8 @@
         "y": 280,
         "wires": [
             [
-                "91768124121d1879"
+                "91768124121d1879",
+                "a21b74f436bf70cf"
             ]
         ]
     },
@@ -926,7 +927,26 @@
         "syntax": "mustache",
         "template": "Lila",
         "output": "str",
-        "x": 840,
+        "x": 900,
+        "y": 320,
+        "wires": [
+            [
+                "5f844d3ebda3036b"
+            ]
+        ]
+    },
+    {
+        "id": "a21b74f436bf70cf",
+        "type": "template",
+        "z": "a70b308d97d0a0ed",
+        "name": "",
+        "field": "color",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "Azul",
+        "output": "str",
+        "x": 660,
         "y": 320,
         "wires": [
             [
