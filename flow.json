@@ -618,23 +618,6 @@
         "wires": []
     },
     {
-        "id": "0e4bc38219659e1c",
-        "type": "debug",
-        "z": "a70b308d97d0a0ed",
-        "name": "debug 2",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 640,
-        "y": 920,
-        "wires": []
-    },
-    {
         "id": "9180e561e1652570",
         "type": "rc522-extra",
         "z": "a70b308d97d0a0ed",
@@ -661,11 +644,11 @@
         "debounce": "25",
         "read": false,
         "bcm": true,
-        "x": 350,
-        "y": 920,
+        "x": 130,
+        "y": 340,
         "wires": [
             [
-                "0e4bc38219659e1c"
+                "c765ec807b6c0ae6"
             ]
         ]
     },
