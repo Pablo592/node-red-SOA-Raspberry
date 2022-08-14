@@ -644,11 +644,11 @@
         "debounce": "25",
         "read": false,
         "bcm": true,
-        "x": 130,
-        "y": 340,
+        "x": 110,
+        "y": 360,
         "wires": [
             [
-                "c765ec807b6c0ae6"
+                "142a460664e299a4"
             ]
         ]
     },
@@ -883,6 +883,26 @@
         "wires": [
             [
                 "5f844d3ebda3036b"
+            ]
+        ]
+    },
+    {
+        "id": "142a460664e299a4",
+        "type": "rbe",
+        "z": "a70b308d97d0a0ed",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "payload",
+        "topi": "topic",
+        "x": 270,
+        "y": 360,
+        "wires": [
+            [
+                "c765ec807b6c0ae6"
             ]
         ]
     }
