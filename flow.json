@@ -562,7 +562,7 @@
         "type": "subflow:0ba476ce26e5c034",
         "z": "a70b308d97d0a0ed",
         "name": "Conexión Sensor de temperatura y humedad",
-        "x": 830,
+        "x": 870,
         "y": 60,
         "wires": [
             [
@@ -595,7 +595,7 @@
         "y": 60,
         "wires": [
             [
-                "3b337c9016b3dae3"
+                "2d20147990ddc268"
             ]
         ]
     },
@@ -631,7 +631,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 580,
-        "y": 300,
+        "y": 320,
         "wires": []
     },
     {
@@ -661,10 +661,10 @@
         "dataBlockAddr": 8,
         "dataBlockLength": 4,
         "x": 160,
-        "y": 300,
+        "y": 140,
         "wires": [
             [
-                "e0150ff1dc085382"
+                "2d20147990ddc268"
             ]
         ]
     },
@@ -725,7 +725,7 @@
         "type": "subflow:f1eb68bd8dddaee2",
         "z": "a70b308d97d0a0ed",
         "name": "Obtener mi ubicacion",
-        "x": 520,
+        "x": 560,
         "y": 60,
         "wires": [
             [
@@ -834,8 +834,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 400,
-        "y": 300,
+        "x": 420,
+        "y": 320,
         "wires": [
             [
                 "dd17daac6b6ba719"
@@ -868,6 +868,31 @@
         "wires": [
             [
                 "e0150ff1dc085382"
+            ]
+        ]
+    },
+    {
+        "id": "2d20147990ddc268",
+        "type": "switch",
+        "z": "a70b308d97d0a0ed",
+        "name": "",
+        "property": "payload.uid",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "neq",
+                "v": "undefined",
+                "vt": "jsonata"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 310,
+        "y": 60,
+        "wires": [
+            [
+                "3b337c9016b3dae3"
             ]
         ]
     }
