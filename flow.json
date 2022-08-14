@@ -664,7 +664,7 @@
         "y": 240,
         "wires": [
             [
-                "e0150ff1dc085382"
+                "c765ec807b6c0ae6"
             ]
         ]
     },
@@ -805,7 +805,7 @@
         "type": "delay",
         "z": "a70b308d97d0a0ed",
         "name": "",
-        "pauseType": "delay",
+        "pauseType": "delayv",
         "timeout": "30",
         "timeoutUnits": "seconds",
         "rate": "1",
@@ -817,7 +817,7 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 860,
+        "x": 620,
         "y": 240,
         "wires": [
             [
@@ -857,8 +857,8 @@
         "type": "switch",
         "z": "a70b308d97d0a0ed",
         "name": "",
-        "property": "payload.uid",
-        "propertyType": "msg",
+        "property": "autorizacion",
+        "propertyType": "global",
         "rules": [
             {
                 "t": "neq",
@@ -872,25 +872,8 @@
         "x": 290,
         "y": 60,
         "wires": [
-            []
-        ]
-    },
-    {
-        "id": "e0150ff1dc085382",
-        "type": "function",
-        "z": "a70b308d97d0a0ed",
-        "name": "function 2",
-        "func": "if(msg.payload.uid === undefined){\n    msg.autorizacion = 0\n}else{\n    msg.autorizacion = 1\n}\n//msg.payload.uid = null;\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 360,
-        "y": 240,
-        "wires": [
             [
-                "c765ec807b6c0ae6"
+                "3b337c9016b3dae3"
             ]
         ]
     },
@@ -902,7 +885,7 @@
         "rules": [
             {
                 "t": "move",
-                "p": "payload.autorizacion",
+                "p": "payload",
                 "pt": "msg",
                 "to": "autorizacion",
                 "tot": "global"
@@ -913,7 +896,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 610,
+        "x": 430,
         "y": 240,
         "wires": [
             [
@@ -938,7 +921,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1070,
+        "x": 850,
         "y": 240,
         "wires": [
             []
