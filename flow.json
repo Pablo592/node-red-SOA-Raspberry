@@ -788,7 +788,7 @@
         "type": "delay",
         "z": "a70b308d97d0a0ed",
         "name": "",
-        "pauseType": "delayv",
+        "pauseType": "delay",
         "timeout": "30",
         "timeoutUnits": "seconds",
         "rate": "1",
