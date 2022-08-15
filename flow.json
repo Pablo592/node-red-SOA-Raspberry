@@ -87,7 +87,7 @@
         ],
         "out": [
             {
-                "x": 1200,
+                "x": 1140,
                 "y": 240,
                 "wires": [
                     {
@@ -592,7 +592,7 @@
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 750,
+        "x": 590,
         "y": 160,
         "wires": [
             [
@@ -615,7 +615,7 @@
         "y": 160,
         "wires": [
             [
-                "43764f135be8b8bf"
+                "6f2e636c2084d967"
             ]
         ]
     },
@@ -630,7 +630,7 @@
         "syntax": "mustache",
         "template": "\n{\n \"ciudad\":\"{{payload.city}}\",\n \"region\":\"{{payload.region}}\",\n \"pais\":\"{{payload.country}}\",\n \"coordenadas\":\"{{payload.loc}}\",\n \"codigoPostal\":\"{{payload.postal}}\",\n \"zonaHoraria\":\"{{payload.timezone}}\"\n}",
         "output": "json",
-        "x": 900,
+        "x": 740,
         "y": 160,
         "wires": [
             [
@@ -658,7 +658,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1130,
+        "x": 970,
         "y": 160,
         "wires": [
             []
@@ -721,25 +721,6 @@
         "y": 240,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "43764f135be8b8bf",
-        "type": "function",
-        "z": "f1eb68bd8dddaee2",
-        "name": "function 2",
-        "func": "msg.payload.replace(\"&#x2F;\",\"/\");\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 600,
-        "y": 160,
-        "wires": [
-            [
-                "6f2e636c2084d967"
-            ]
         ]
     },
     {
