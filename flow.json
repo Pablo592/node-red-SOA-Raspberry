@@ -80,18 +80,22 @@
                 "y": 80,
                 "wires": [
                     {
-                        "id": "f5b6bbc15439bbef"
+                        "id": "10864acf26be6e1f"
                     }
                 ]
             }
         ],
         "out": [
             {
-                "x": 580,
-                "y": 160,
+                "x": 1200,
+                "y": 220,
                 "wires": [
                     {
-                        "id": "4808205d1f385054",
+                        "id": "de9a484e2d989c09",
+                        "port": 0
+                    },
+                    {
+                        "id": "459a109e4c906256",
                         "port": 0
                     }
                 ]
@@ -521,7 +525,7 @@
         "winHide": false,
         "oldrc": false,
         "name": "",
-        "x": 200,
+        "x": 580,
         "y": 80,
         "wires": [
             [
@@ -543,7 +547,7 @@
         "winHide": false,
         "oldrc": false,
         "name": "",
-        "x": 430,
+        "x": 810,
         "y": 80,
         "wires": [
             [
@@ -561,7 +565,7 @@
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 270,
+        "x": 650,
         "y": 160,
         "wires": [
             [
@@ -580,7 +584,7 @@
         "arraySpltType": "len",
         "stream": false,
         "addname": "",
-        "x": 130,
+        "x": 510,
         "y": 160,
         "wires": [
             [
@@ -599,8 +603,93 @@
         "syntax": "mustache",
         "template": "\n{\n \"ciudad\":\"{{payload.city}}\",\n \"region\":\"{{payload.region}}\",\n \"pais\":\"{{payload.country}}\",\n \"coordenadas\":\"{{payload.loc}}\",\n \"codigoPostal\":\"{{payload.postal}}\",\n \"zonaHoraria\":\"{{payload.timezone}}\"\n}",
         "output": "json",
-        "x": 420,
+        "x": 800,
         "y": 160,
+        "wires": [
+            [
+                "de9a484e2d989c09"
+            ]
+        ]
+    },
+    {
+        "id": "de9a484e2d989c09",
+        "type": "change",
+        "z": "f1eb68bd8dddaee2",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "ubicacion",
+                "pt": "msg",
+                "to": "ubicacion",
+                "tot": "global"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1010,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "10864acf26be6e1f",
+        "type": "switch",
+        "z": "f1eb68bd8dddaee2",
+        "name": "",
+        "property": "ubicacion",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "undefined",
+                "vt": "jsonata"
+            },
+            {
+                "t": "neq",
+                "v": "undefined",
+                "vt": "jsonata"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 210,
+        "y": 80,
+        "wires": [
+            [
+                "f5b6bbc15439bbef"
+            ],
+            [
+                "459a109e4c906256"
+            ]
+        ]
+    },
+    {
+        "id": "459a109e4c906256",
+        "type": "change",
+        "z": "f1eb68bd8dddaee2",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "ubicacion",
+                "pt": "global",
+                "to": "ubicacion",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 530,
+        "y": 220,
         "wires": [
             []
         ]
@@ -739,7 +828,7 @@
         "type": "subflow:f1eb68bd8dddaee2",
         "z": "a70b308d97d0a0ed",
         "name": "Obtener mi ubicacion",
-        "x": 560,
+        "x": 520,
         "y": 60,
         "wires": [
             [
