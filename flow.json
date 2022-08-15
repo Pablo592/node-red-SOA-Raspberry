@@ -40,11 +40,11 @@
         ],
         "out": [
             {
-                "x": 1180,
+                "x": 1200,
                 "y": 100,
                 "wires": [
                     {
-                        "id": "aa73fb9b18442a6c",
+                        "id": "803a7c5001f0ec05",
                         "port": 0
                     }
                 ]
@@ -143,9 +143,7 @@
         "x": 730,
         "y": 100,
         "wires": [
-            [
-                "aa73fb9b18442a6c"
-            ]
+            []
         ]
     },
     {
@@ -182,31 +180,6 @@
             [
                 "97d679fe1aa414ae"
             ]
-        ]
-    },
-    {
-        "id": "aa73fb9b18442a6c",
-        "type": "change",
-        "z": "0ba476ce26e5c034",
-        "name": "",
-        "rules": [
-            {
-                "t": "move",
-                "p": "payload.ubicacion",
-                "pt": "msg",
-                "to": "ubicacion",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1020,
-        "y": 100,
-        "wires": [
-            []
         ]
     },
     {
