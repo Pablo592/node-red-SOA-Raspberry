@@ -1107,7 +1107,7 @@
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "payload",
+        "complete": "ubicacion",
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
