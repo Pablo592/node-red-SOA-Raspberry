@@ -155,7 +155,7 @@
         "fieldType": "msg",
         "format": "handlebars",
         "syntax": "mustache",
-        "template": "{\n\"rawData\":{\n    \"temperatura\":\"{{payload.temperature_C}}\",\n    \"humedad\":\"{{payload.humidity}}\",\n    \"presion\":\"{{payload.pressure_hPa}}\"\n    },\n    \"ubicacion\":{\n        \"ciudad\":\"{{msg.ubicacion.city}}\",\n        \"region\":\"{{msg.ubicacion.region}}\",\n        \"pais\":\"{{msg.ubicacion.country}}\",\n        \"coordenadas\":\"{{msg.ubicacion.loc}}\",\n        \"codigoPostal\":\"{{msg.ubicacion.postal}}\",\n        \"zonaHoraria\":\"{{msg.ubicacion.timezone}}\"\n    },\n    \"fechaHoraRecepcion\":\"fecha\",\n    \"categoria\":\"casa\",\n    \"subCategoria\":\"habitacion\",\n    \"identificador\":\"TK01\",\n    \"altitud\":\"altitud\",\n    \"puntoRocio\":\"puntoRocio\"\n}",
+        "template": "{\n\"rawData\":{\n    \"temperatura\":\"{{payload.temperature_C}}\",\n    \"humedad\":\"{{payload.humidity}}\",\n    \"presion\":\"{{payload.pressure_hPa}}\"\n    },\n    \"ubicacion\":{\n        \"ciudad\":\"{{msg.ubicacion.ciudad}}\",\n        \"region\":\"{{msg.ubicacion.region}}\",\n        \"pais\":\"{{msg.ubicacion.pais}}\",\n        \"coordenadas\":\"{{msg.ubicacion.coordenadas}}\",\n        \"codigoPostal\":\"{{msg.ubicacion.codigoPostal}}\",\n        \"zonaHoraria\":\"{{msg.ubicacion.zonaHoraria}}\"\n    },\n    \"fechaHoraRecepcion\":\"fecha\",\n    \"categoria\":\"casa\",\n    \"subCategoria\":\"habitacion\",\n    \"identificador\":\"TK01\",\n    \"altitud\":\"altitud\",\n    \"puntoRocio\":\"puntoRocio\"\n}",
         "output": "json",
         "x": 440,
         "y": 100,
@@ -1111,7 +1111,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 740,
+        "x": 880,
         "y": 220,
         "wires": []
     }
