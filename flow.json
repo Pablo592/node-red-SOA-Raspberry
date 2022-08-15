@@ -88,7 +88,7 @@
         "out": [
             {
                 "x": 1200,
-                "y": 220,
+                "y": 240,
                 "wires": [
                     {
                         "id": "de9a484e2d989c09",
@@ -592,7 +592,7 @@
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 650,
+        "x": 610,
         "y": 160,
         "wires": [
             [
@@ -611,7 +611,7 @@
         "arraySpltType": "len",
         "stream": false,
         "addname": "",
-        "x": 510,
+        "x": 470,
         "y": 160,
         "wires": [
             [
@@ -630,11 +630,11 @@
         "syntax": "mustache",
         "template": "\n{\n \"ciudad\":\"{{payload.city}}\",\n \"region\":\"{{payload.region}}\",\n \"pais\":\"{{payload.country}}\",\n \"coordenadas\":\"{{payload.loc}}\",\n \"codigoPostal\":\"{{payload.postal}}\",\n \"zonaHoraria\":\"{{payload.timezone}}\"\n}",
         "output": "json",
-        "x": 800,
+        "x": 760,
         "y": 160,
         "wires": [
             [
-                "de9a484e2d989c09"
+                "43764f135be8b8bf"
             ]
         ]
     },
@@ -658,7 +658,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1010,
+        "x": 1130,
         "y": 160,
         "wires": [
             []
@@ -718,9 +718,28 @@
         "to": "",
         "reg": false,
         "x": 530,
-        "y": 220,
+        "y": 240,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "43764f135be8b8bf",
+        "type": "function",
+        "z": "f1eb68bd8dddaee2",
+        "name": "function 2",
+        "func": "msg.ubicacion.zonaHoraria.replace('&#x2F;','/')\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 920,
+        "y": 160,
+        "wires": [
+            [
+                "de9a484e2d989c09"
+            ]
         ]
     },
     {
