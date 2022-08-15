@@ -40,11 +40,11 @@
         ],
         "out": [
             {
-                "x": 1040,
+                "x": 1180,
                 "y": 100,
                 "wires": [
                     {
-                        "id": "803a7c5001f0ec05",
+                        "id": "aa73fb9b18442a6c",
                         "port": 0
                     }
                 ]
@@ -143,7 +143,9 @@
         "x": 730,
         "y": 100,
         "wires": [
-            []
+            [
+                "aa73fb9b18442a6c"
+            ]
         ]
     },
     {
@@ -155,7 +157,7 @@
         "fieldType": "msg",
         "format": "handlebars",
         "syntax": "mustache",
-        "template": "{\n\"rawData\":{\n    \"temperatura\":\"{{payload.temperature_C}}\",\n    \"humedad\":\"{{payload.humidity}}\",\n    \"presion\":\"{{payload.pressure_hPa}}\"\n    },\n    \"ubicacion\":{\n        \"ciudad\":\"{{msg.ubicacion.ciudad}}\",\n        \"region\":\"{{msg.ubicacion.region}}\",\n        \"pais\":\"{{msg.ubicacion.pais}}\",\n        \"coordenadas\":\"{{msg.ubicacion.coordenadas}}\",\n        \"codigoPostal\":\"{{msg.ubicacion.codigoPostal}}\",\n        \"zonaHoraria\":\"{{msg.ubicacion.zonaHoraria}}\"\n    },\n    \"fechaHoraRecepcion\":\"fecha\",\n    \"categoria\":\"casa\",\n    \"subCategoria\":\"habitacion\",\n    \"identificador\":\"TK01\",\n    \"altitud\":\"altitud\",\n    \"puntoRocio\":\"puntoRocio\"\n}",
+        "template": "{\n\"rawData\":{\n    \"temperatura\":\"{{payload.temperature_C}}\",\n    \"humedad\":\"{{payload.humidity}}\",\n    \"presion\":\"{{payload.pressure_hPa}}\"\n    },\n    \"fechaHoraRecepcion\":\"fecha\",\n    \"categoria\":\"casa\",\n    \"subCategoria\":\"habitacion\",\n    \"identificador\":\"TK01\",\n    \"altitud\":\"altitud\",\n    \"puntoRocio\":\"puntoRocio\"\n}",
         "output": "json",
         "x": 440,
         "y": 100,
@@ -180,6 +182,31 @@
             [
                 "97d679fe1aa414ae"
             ]
+        ]
+    },
+    {
+        "id": "aa73fb9b18442a6c",
+        "type": "change",
+        "z": "0ba476ce26e5c034",
+        "name": "",
+        "rules": [
+            {
+                "t": "move",
+                "p": "payload.ubicacion",
+                "pt": "msg",
+                "to": "ubicacion",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1020,
+        "y": 100,
+        "wires": [
+            []
         ]
     },
     {
