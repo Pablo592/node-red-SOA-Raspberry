@@ -597,7 +597,7 @@
         "type": "template",
         "z": "f1eb68bd8dddaee2",
         "name": "",
-        "field": "payload",
+        "field": "ubicacion",
         "fieldType": "msg",
         "format": "handlebars",
         "syntax": "mustache",
@@ -619,10 +619,10 @@
         "rules": [
             {
                 "t": "set",
-                "p": "payload",
-                "pt": "msg",
+                "p": "ubicacion",
+                "pt": "global",
                 "to": "ubicacion",
-                "tot": "global",
+                "tot": "msg",
                 "dc": true
             }
         ],
@@ -631,7 +631,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1000,
+        "x": 1010,
         "y": 160,
         "wires": [
             []
@@ -679,9 +679,9 @@
             {
                 "t": "set",
                 "p": "ubicacion",
-                "pt": "global",
-                "to": "payload",
-                "tot": "msg",
+                "pt": "msg",
+                "to": "ubicacion",
+                "tot": "global",
                 "dc": true
             }
         ],
@@ -1107,7 +1107,8 @@
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "false",
+        "complete": "payload",
+        "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
         "x": 680,
