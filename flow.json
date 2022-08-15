@@ -44,7 +44,7 @@
                 "y": 100,
                 "wires": [
                     {
-                        "id": "803a7c5001f0ec05",
+                        "id": "084166e51ece4ef3",
                         "port": 0
                     }
                 ]
@@ -153,7 +153,9 @@
         "x": 730,
         "y": 100,
         "wires": [
-            []
+            [
+                "084166e51ece4ef3"
+            ]
         ]
     },
     {
@@ -190,6 +192,31 @@
             [
                 "97d679fe1aa414ae"
             ]
+        ]
+    },
+    {
+        "id": "084166e51ece4ef3",
+        "type": "change",
+        "z": "0ba476ce26e5c034",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload.ubicacion",
+                "pt": "msg",
+                "to": "ubicacion",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1040,
+        "y": 100,
+        "wires": [
+            []
         ]
     },
     {
