@@ -622,7 +622,8 @@
                 "p": "payload",
                 "pt": "msg",
                 "to": "ubicacion",
-                "tot": "global"
+                "tot": "global",
+                "dc": true
             }
         ],
         "action": "",
@@ -680,7 +681,8 @@
                 "p": "ubicacion",
                 "pt": "global",
                 "to": "payload",
-                "tot": "msg"
+                "tot": "msg",
+                "dc": true
             }
         ],
         "action": "",
