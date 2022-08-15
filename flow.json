@@ -701,7 +701,7 @@
         "type": "subflow:0ba476ce26e5c034",
         "z": "a70b308d97d0a0ed",
         "name": "Conexión Sensor de temperatura y humedad",
-        "x": 870,
+        "x": 810,
         "y": 60,
         "wires": [
             [
@@ -831,11 +831,12 @@
         "type": "subflow:f1eb68bd8dddaee2",
         "z": "a70b308d97d0a0ed",
         "name": "Obtener mi ubicacion",
-        "x": 520,
+        "x": 460,
         "y": 60,
         "wires": [
             [
-                "08c849a2151be731"
+                "08c849a2151be731",
+                "a4de51bb27cb8063"
             ]
         ]
     },
@@ -898,8 +899,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 780,
-        "y": 140,
+        "x": 380,
+        "y": 180,
         "wires": [
             [
                 "96949194bc3dd5b9"
@@ -949,7 +950,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 290,
+        "x": 270,
         "y": 60,
         "wires": [
             [
@@ -1111,7 +1112,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 880,
+        "x": 900,
         "y": 220,
         "wires": []
     }
