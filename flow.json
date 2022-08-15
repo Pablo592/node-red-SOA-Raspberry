@@ -718,7 +718,9 @@
                 "a4de51bb27cb8063",
                 "96949194bc3dd5b9"
             ],
-            []
+            [
+                "941d7e211120182b"
+            ]
         ]
     },
     {
@@ -1096,8 +1098,25 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 900,
-        "y": 220,
+        "x": 1080,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "941d7e211120182b",
+        "type": "debug",
+        "z": "a70b308d97d0a0ed",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "ubicacion.ciudad",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 480,
+        "y": 180,
         "wires": []
     }
 ]
