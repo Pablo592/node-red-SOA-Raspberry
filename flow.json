@@ -622,8 +622,7 @@
                 "p": "ubicacion",
                 "pt": "msg",
                 "to": "ubicacion",
-                "tot": "global",
-                "dc": true
+                "tot": "global"
             }
         ],
         "action": "",
@@ -681,8 +680,7 @@
                 "p": "ubicacion",
                 "pt": "global",
                 "to": "ubicacion",
-                "tot": "msg",
-                "dc": true
+                "tot": "msg"
             }
         ],
         "action": "",
