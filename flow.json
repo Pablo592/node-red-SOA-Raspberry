@@ -592,7 +592,7 @@
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 610,
+        "x": 750,
         "y": 160,
         "wires": [
             [
@@ -611,11 +611,11 @@
         "arraySpltType": "len",
         "stream": false,
         "addname": "",
-        "x": 470,
+        "x": 450,
         "y": 160,
         "wires": [
             [
-                "6f2e636c2084d967"
+                "43764f135be8b8bf"
             ]
         ]
     },
@@ -630,11 +630,11 @@
         "syntax": "mustache",
         "template": "\n{\n \"ciudad\":\"{{payload.city}}\",\n \"region\":\"{{payload.region}}\",\n \"pais\":\"{{payload.country}}\",\n \"coordenadas\":\"{{payload.loc}}\",\n \"codigoPostal\":\"{{payload.postal}}\",\n \"zonaHoraria\":\"{{payload.timezone}}\"\n}",
         "output": "json",
-        "x": 760,
+        "x": 900,
         "y": 160,
         "wires": [
             [
-                "43764f135be8b8bf"
+                "de9a484e2d989c09"
             ]
         ]
     },
@@ -728,17 +728,17 @@
         "type": "function",
         "z": "f1eb68bd8dddaee2",
         "name": "function 2",
-        "func": "msg.ubicacion.zonaHoraria.replace(\"&0#x2F;\",\"/\");\nreturn msg;",
+        "func": "msg.payload.replace(\"&0#x2F;\",\"/\");\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 920,
+        "x": 600,
         "y": 160,
         "wires": [
             [
-                "de9a484e2d989c09"
+                "6f2e636c2084d967"
             ]
         ]
     },
