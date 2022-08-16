@@ -686,7 +686,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 210,
+        "x": 190,
         "y": 80,
         "wires": [
             [
