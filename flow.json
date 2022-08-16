@@ -823,7 +823,7 @@
         "type": "subflow:e92dc53c81852ec7",
         "z": "a70b308d97d0a0ed",
         "name": "Setear color en led",
-        "x": 1050,
+        "x": 1070,
         "y": 240,
         "wires": []
     },
