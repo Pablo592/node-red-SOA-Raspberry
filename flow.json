@@ -62,7 +62,7 @@
                 "y": 540,
                 "wires": [
                     {
-                        "id": "e49e6882b687b063"
+                        "id": "d27f6f5d4cc32eee"
                     }
                 ]
             }
@@ -1154,7 +1154,8 @@
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "false",
+        "complete": "payload",
+        "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
         "x": 1100,
