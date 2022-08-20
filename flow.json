@@ -541,6 +541,31 @@
         ]
     },
     {
+        "id": "e49e6882b687b063",
+        "type": "function",
+        "z": "e92dc53c81852ec7",
+        "name": "function 2",
+        "func": "function miBit(bit){\n   msg.payload =  bit;\n   return msg;\n}\n\nswitch(msg.color){\n    case 'Rojo':{\n\n        return [miBit(), miBit(), miBit()]\n    }\n    case 'Verde': {\n\n        return [miBit(), miBit(), miBit()]\n    }\n    case 'Amarillo': {\n\n        return [miBit(), miBit(), miBit()]\n    }\n    case 'Apagar': {\n\n        return [miBit(), miBit(), miBit()]\n    }\n    case 'Lila': {\n\n        return [miBit(), miBit(), miBit()]\n    }\n    case 'Azul': {\n\n        return [miBit(), miBit(), miBit()]\n    }\n}\n\nreturn msg;",
+        "outputs": 3,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 980,
+        "wires": [
+            [
+                "abfba9beeca11254"
+            ],
+            [
+                "d8c19af7c11134bf"
+            ],
+            [
+                "5533ae5039db6c09"
+            ]
+        ]
+    },
+    {
         "id": "f5b6bbc15439bbef",
         "type": "exec",
         "z": "f1eb68bd8dddaee2",
