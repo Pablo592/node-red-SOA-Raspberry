@@ -545,7 +545,7 @@
         "type": "function",
         "z": "e92dc53c81852ec7",
         "name": "function 2",
-        "func": "function miBit(bit){\n   msg.payload =  bit;\n   return msg;\n}\n\nswitch(msg.color){\n    case 'Rojo':{\n\n        return [miBit(1), miBit(0), miBit(0)]\n    }\n    case 'Verde': {\n\n        return [miBit(0), miBit(1), miBit(0)]\n    }\n    case 'Amarillo': {\n\n        return [miBit(1), miBit(1), miBit(0)]\n    }\n    case 'Apagar': {\n\n        return [miBit(0), miBit(0), miBit(0)]\n    }\n    case 'Lila': {\n\n        return [miBit(1), miBit(0), miBit(1)]\n    }\n    case 'Azul': {\n\n        return [miBit(0), miBit(0), miBit(1)]\n    }\n}\n\nreturn msg;",
+        "func": "function miBit(bit){\n   msg.payload =  bit;\n   return msg;\n}\n\nswitch(msg.color){\n    case 'Rojo':{\n\n        return [miBit(1), miBit(0), miBit(0)]\n    }\n    case 'Verde': {\n\n        return [miBit(0), miBit(1), miBit(0)]\n    }\n    case 'Amarillo': {\n\n        return [miBit(1), miBit(1), miBit(0)]\n    }\n    case 'Apagar': {\n\n        return [miBit(0), miBit(0), miBit(0)]\n    }\n    case 'Lila': {\n\n        return [miBit(1), miBit(0), miBit(1)]\n    }\n    case 'Azul': {\n\n        return [miBit(0), miBit(0), miBit(1)]\n    }\n}",
         "outputs": 3,
         "noerr": 0,
         "initialize": "",
