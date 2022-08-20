@@ -67,7 +67,26 @@
                 ]
             }
         ],
-        "out": []
+        "out": [
+            {
+                "x": 940,
+                "y": 800,
+                "wires": [
+                    {
+                        "id": "e49e6882b687b063",
+                        "port": 0
+                    },
+                    {
+                        "id": "e49e6882b687b063",
+                        "port": 1
+                    },
+                    {
+                        "id": "e49e6882b687b063",
+                        "port": 2
+                    }
+                ]
+            }
+        ]
     },
     {
         "id": "f1eb68bd8dddaee2",
@@ -850,7 +869,11 @@
         "name": "Setear color en led",
         "x": 1070,
         "y": 240,
-        "wires": []
+        "wires": [
+            [
+                "24367037774a36ed"
+            ]
+        ]
     },
     {
         "id": "fa49e24c65a21e5d",
@@ -1121,5 +1144,21 @@
                 "3610a46bd62ca1f9"
             ]
         ]
+    },
+    {
+        "id": "24367037774a36ed",
+        "type": "debug",
+        "z": "a70b308d97d0a0ed",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1100,
+        "y": 500,
+        "wires": []
     }
 ]
