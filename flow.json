@@ -59,19 +59,19 @@
         "category": "",
         "in": [
             {
-                "x": 40,
-                "y": 540,
+                "x": 60,
+                "y": 480,
                 "wires": [
                     {
-                        "id": "e49e6882b687b063"
+                        "id": "d27f6f5d4cc32eee"
                     }
                 ]
             }
         ],
         "out": [
             {
-                "x": 940,
-                "y": 800,
+                "x": 960,
+                "y": 1000,
                 "wires": [
                     {
                         "id": "e49e6882b687b063",
@@ -243,8 +243,8 @@
         "freq": "",
         "out": "out",
         "bcm": true,
-        "x": 980,
-        "y": 100,
+        "x": 1040,
+        "y": 80,
         "wires": []
     },
     {
@@ -258,8 +258,8 @@
         "freq": "",
         "out": "out",
         "bcm": true,
-        "x": 960,
-        "y": 240,
+        "x": 1020,
+        "y": 220,
         "wires": []
     },
     {
@@ -273,8 +273,8 @@
         "freq": "",
         "out": "out",
         "bcm": true,
-        "x": 960,
-        "y": 400,
+        "x": 1020,
+        "y": 380,
         "wires": []
     },
     {
@@ -319,8 +319,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 6,
-        "x": 170,
-        "y": 340,
+        "x": 310,
+        "y": 380,
         "wires": [
             [
                 "0e287230a3049135",
@@ -358,8 +358,8 @@
         "syntax": "mustache",
         "template": "0",
         "output": "str",
-        "x": 480,
-        "y": 120,
+        "x": 540,
+        "y": 100,
         "wires": [
             [
                 "d8c19af7c11134bf",
@@ -378,8 +378,8 @@
         "syntax": "mustache",
         "template": "1",
         "output": "str",
-        "x": 480,
-        "y": 80,
+        "x": 540,
+        "y": 60,
         "wires": [
             [
                 "abfba9beeca11254"
@@ -397,8 +397,8 @@
         "syntax": "mustache",
         "template": "1",
         "output": "str",
-        "x": 460,
-        "y": 220,
+        "x": 520,
+        "y": 200,
         "wires": [
             [
                 "d8c19af7c11134bf"
@@ -416,8 +416,8 @@
         "syntax": "mustache",
         "template": "0",
         "output": "str",
-        "x": 460,
-        "y": 260,
+        "x": 520,
+        "y": 240,
         "wires": [
             [
                 "abfba9beeca11254",
@@ -436,8 +436,8 @@
         "syntax": "mustache",
         "template": "0",
         "output": "str",
-        "x": 460,
-        "y": 380,
+        "x": 520,
+        "y": 360,
         "wires": [
             [
                 "5533ae5039db6c09"
@@ -455,8 +455,8 @@
         "syntax": "mustache",
         "template": "1",
         "output": "str",
-        "x": 460,
-        "y": 420,
+        "x": 520,
+        "y": 400,
         "wires": [
             [
                 "d8c19af7c11134bf",
@@ -475,8 +475,8 @@
         "syntax": "mustache",
         "template": "0",
         "output": "str",
-        "x": 460,
-        "y": 540,
+        "x": 520,
+        "y": 520,
         "wires": [
             [
                 "abfba9beeca11254",
@@ -496,8 +496,8 @@
         "syntax": "mustache",
         "template": "1",
         "output": "str",
-        "x": 460,
-        "y": 640,
+        "x": 520,
+        "y": 620,
         "wires": [
             [
                 "abfba9beeca11254",
@@ -516,8 +516,8 @@
         "syntax": "mustache",
         "template": "0",
         "output": "str",
-        "x": 460,
-        "y": 680,
+        "x": 520,
+        "y": 660,
         "wires": [
             [
                 "d8c19af7c11134bf"
@@ -535,8 +535,8 @@
         "syntax": "mustache",
         "template": "0",
         "output": "str",
-        "x": 460,
-        "y": 800,
+        "x": 520,
+        "y": 780,
         "wires": [
             [
                 "d8c19af7c11134bf",
@@ -555,8 +555,8 @@
         "syntax": "mustache",
         "template": "1",
         "output": "str",
-        "x": 460,
-        "y": 760,
+        "x": 520,
+        "y": 740,
         "wires": [
             [
                 "5533ae5039db6c09"
